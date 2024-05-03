@@ -2,6 +2,10 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
+// vite.config.js
+export default {
+  server: {
+    port: 3000 // Change 3000 to the port number you want to use
+  }
+}
+
