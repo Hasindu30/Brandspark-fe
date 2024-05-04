@@ -7,8 +7,9 @@ import Home from './Pages/Home';
 
 function App() {
   return (
+    <Home />
 
-    <>
+   /* <>
      <Router>
       <Routes>
       <Route path='/Home' exact element={<Home />} />
@@ -18,7 +19,7 @@ function App() {
       </Routes>
     </Router> 
 
-    </> 
+    </> */
   );
 }
 
