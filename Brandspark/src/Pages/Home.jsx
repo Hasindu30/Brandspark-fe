@@ -1,7 +1,10 @@
 import React from 'react'
+import Footer from '../Components/Footer'
 
-export default function Home() {
+const Home = () => {
   return (
-    <div>contact</div>
+    <div>Home</div>
   )
 }
+
+export default Home
