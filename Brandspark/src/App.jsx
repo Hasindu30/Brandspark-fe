@@ -1,3 +1,15 @@
+import React, {useState} from 'react'
+import Navbar from './Components/Navbar/Navbar'
+
+const App = () => {
+  
+  return (
+    <div>
+      <Navbar/>
+      
+    </div>
+  )
+}
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './Pages/Login';
@@ -20,7 +32,7 @@ function App() {
 
     </> 
   );
+
 }
 
 export default App;
-
