@@ -1,11 +1,14 @@
 import React from 'react'
 import Footer from '../Components/Footer'
+import Navbar from '../Components/Navbar/Navbar'
 
 const Home = () => {
   return (
     <div>
-      <h1>HGVJDHFVKGDHKFVH</h1><br />
+      <Navbar/>
       <Footer/>
+
+
     </div>
   )
 }

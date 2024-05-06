@@ -1,14 +1,17 @@
+
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import Login from './Pages/Login';
 import Signup from './Pages/Signup';
 import Expertsignup from './Pages/Expertsignup';
 import Home from './Pages/Home';
+import CreateLogo from './Pages/CreateLogo';
 
 function App() {
   return (
+    <CreateLogo />
 
-    <>
+   /* <>
      <Router>
       <Routes>
       <Route path='/Home' exact element={<Home />} />
@@ -18,9 +21,9 @@ function App() {
       </Routes>
     </Router> 
 
-    </> 
+    </> */
   );
+
 }
 
 export default App;
-
