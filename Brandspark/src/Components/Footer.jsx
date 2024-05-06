@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css';
+
 import icon1 from '../assets/icon1.png'
 import icon2 from '../assets/icon2.png'
 import icon3 from '../assets/icon3.png'
@@ -10,7 +11,7 @@ import logo1 from '../assets/logo1.png'
 
 const Footer = () => {
   return (
-    <div>
+    <div className='fotteradj'>
         
 <footer className="footer-distributed">
 
@@ -86,4 +87,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;
