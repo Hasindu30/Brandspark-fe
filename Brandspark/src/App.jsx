@@ -4,6 +4,7 @@ import Signup from './Pages/Signup'
 import Login from './Pages/Login'
 import Home from './Pages/Home/Home'
 import CreateLogo from './Pages/CreateLogo/CreateLogo'
+import Expert from './Pages/Expert/Expert'
 
 
 const App = () => {
