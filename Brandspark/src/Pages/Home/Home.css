@@ -58,4 +58,44 @@
 }
 .slider{
     margin-top: 100px;
+    align-items: center;
+    margin-left: 50px;
+}
+.logomockup img.logomockups{
+    margin-top: 50px;
+}
+.homeheader h1{
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Outfit", sans-serif;
+    font-size: 40px;
+    color: #222224;
+    font-weight: 670;
+}
+.logomaker-home{
+    display: flex;
+    margin: 100px 120px;
+}
+.homeleft{
+    float: right;
+    margin-left: 80px;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+.homeleft h1{
+    font-family: "Outfit", sans-serif;
+    color: #000000;
+}
+.logomaker-home img{
+    max-width: 500px;
+
+}
+.logomaker-home p{
+    margin-top: 25px;
+    color: #676e8b;
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+}
+.logomaker-home button{
+    margin-top: 20px;
 }

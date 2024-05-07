@@ -31,7 +31,7 @@ const Signup = () => {
           <label htmlFor="confirmPassword">Confirm password</label>
         </div><br/><br/>
 
-        <button type="submit">Sign Up</button>
+        <button type="submit">Signup</button>
         <div className="Login"><br/>
           <p className='Log'>Don't have an account? <a href="/Login">Register</a></p>
         </div>
