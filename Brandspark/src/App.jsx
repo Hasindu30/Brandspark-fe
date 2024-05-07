@@ -3,8 +3,12 @@ import Navbar from './Components/Navbar/Navbar'
 import Signup from './Pages/Signup'
 import Login from './Pages/Login'
 import Home from './Pages/Home/Home'
+
 import Footer from './Components/Footer'
-import CreateLogo from './Pages/CreateLogo'
+
+
+import CreateLogo from './Pages/CreateLogo/CreateLogo'
+import Expert from './Pages/Expert/Expert'
 
 
 
