@@ -18,7 +18,7 @@ const App = () => {
   return (
     <div>
 
-     <Home/>
+     <CreateLogo/>
       
       
     </div>
