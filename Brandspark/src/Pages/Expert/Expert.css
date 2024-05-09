@@ -89,7 +89,7 @@
 .cbody{
     background-color: rgb(247, 247, 247);
     width: 100%;
-    height: 1000px;
+    height: 1100px;
 }
 .cbody h1 span{
     font-size: 35px;
@@ -110,4 +110,46 @@
 }
 .card button:hover{
     background: #2008f7;
+}
+
+.anime :hover{
+
+    background-color: rgb(246, 255, 255);
+    filter: saturate(110%);
+}
+.bottomtext ul{
+    list-style-type: none;
+    opacity: 90%;
+}
+.bottomtext li{
+    margin-top: 6%;
+    margin-left: 10%;
+    margin-right: 15%;
+
+}
+.bottomtext span{
+    font-size: 50px;
+}
+.bottomtext h1{
+    font-size: 20px;
+}
+.bottomtext h2{
+    font-size: 30px;
+}
+.button ul{
+    list-style-type: none;
+    display: flex;
+
+}
+.button .message{
+    height: 50px;
+    width: 400px;
+    border-radius:  10px 0 0 10px ;
+    border-color: #5340ff;
+
+}
+.button .send{
+    height: 50px;
+    width: 100px;
+    border-radius: 0 10px 10px 0;
 }
