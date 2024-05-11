@@ -117,7 +117,7 @@ Ready to take your business to the next level? Get in touch with our experts tod
         
       <div className="homecards">
         
-        <div className="card">
+        <div className="cardx">
           <div className="cardimg">
             <img src={cardimg1} alt="" />
           </div>
@@ -130,7 +130,7 @@ Ready to take your business to the next level? Get in touch with our experts tod
           </ul>
         </div>
 
-        <div className="card">
+        <div className="cardx">
           <div className="cardimg">
             <img src={cardimg2} alt="" />
           </div>
@@ -143,7 +143,7 @@ Ready to take your business to the next level? Get in touch with our experts tod
           </ul>
         </div>
 
-        <div className="card">
+        <div className="cardx">
           <div className="cardimg">
             <img src={cardimg3} alt="" />
           </div>
@@ -155,7 +155,7 @@ Ready to take your business to the next level? Get in touch with our experts tod
             <li><img src={tick} alt="" />Monitor social media conversations and sentiment related to your brand  </li>
           </ul>
         </div>
-        <div className="card">
+        <div className="cardx">
           <div className="cardimg">
             <img src={cardimg4} alt="" />
           </div>
@@ -169,7 +169,7 @@ Ready to take your business to the next level? Get in touch with our experts tod
         </div>
           
 
-        <div className="card">
+        <div className="cardx">
           <div className="cardimg">
             <img src={cardimg5} alt="" />
           </div>
@@ -182,7 +182,7 @@ Ready to take your business to the next level? Get in touch with our experts tod
           </ul>
         </div>
 
-        <div className="card">
+        <div className="cardx">
           <div className="cardimg">
             <img src={cardimg6} alt="" />
           </div>

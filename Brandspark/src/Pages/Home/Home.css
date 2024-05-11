@@ -129,10 +129,11 @@
     margin-top: 100px;
   }
 
-  .card {
+  .cardx {
     background-color: #f9f9f9;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
+    margin: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor:pointer;
   }
@@ -146,7 +147,7 @@
     
   }
 
-  .card h1 {
+  .cardx h1 {
     
     color: #444444;
     margin-bottom: 15px;
@@ -159,14 +160,14 @@
     
   }
 
-  .card ul {
+  .cardx ul {
     list-style-type: none;
     padding: 0;
     margin-top: 30px;
     
   }
 
-  .card ul li {
+  .cardx ul li {
     margin-bottom: 18px;
     display: flex;
     align-items: center;
@@ -177,13 +178,13 @@
     
   }
 
-  .card ul li img {
+  .cardx ul li img {
     margin-right: 10px;
     vertical-align: middle;
     height: 20px;
     
   }
-  .card:hover {
+  .cardx:hover {
     transform: translateY(-1px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: 0.1s ease-in;
