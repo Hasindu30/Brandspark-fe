@@ -177,10 +177,9 @@
     
     
   }
-
   .cardx ul li img {
     margin-right: 10px;
-    vertical-align: middle;
+    vertical-align:middle;
     height: 20px;
     
   }
@@ -189,6 +188,56 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: 0.1s ease-in;
   }
+
+.bottomtext{
+    background: #f4f6f8;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 40px;
+    
+}
+.bottomtext p{
+    font-size: 30px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;  
+}
+.bottomtext input{
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    box-shadow: none;
+    margin-right: 8px;
+    max-width: 424px;
+    padding: 16px 24px;
+    margin-top: 30px;
+    
+}
+.bottomtext input.company{
+    box-sizing: border-box;
+    color: #676e8b;
+    display: inline-block;
+    font-family:"Outfit", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    outline: none;
+    width: 100%;
+    
+}
+.bottomtext button.getstart{
+    background: #5340ff;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    padding: 18px 24px;
+    transition: 0.3s;
+    display: inline;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.bottomtext button.getstart:hover{
+    background: #2008f7;
+}
 
 
 
@@ -250,20 +299,22 @@
       flex-wrap: wrap;
       justify-content: center;
     }
-    .card {
+    .cardx {
       width: 70%;
       margin: 10px;
     }
-    .card h1 {
+    .cardx h1 {
       font-size: 18px;
     }
-    .card ul {
+    .cardx ul {
       padding-left: 20px;
     }
-    .card ul li {
+    .cardx ul li {
       font-size: 14px;
     }
   }
+
+
   @media (max-width: 850px) {
     .headertext {
       text-align: center;
@@ -312,24 +363,21 @@
     .homeleft p {
       font-size: 14px;
     }
-    .homecards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    .bottomtext h1 {
+      font-size: 26px;
+      margin: auto;
     }
-    .card {
-      width: 50%;
-      margin: 10px;
-    }
-    .card h1 {
-      font-size: 18px;
-    }
-    .card ul {
-      padding-left: 20px;
-    }
-    .card ul li {
+    .bottomtext p {
       font-size: 14px;
     }
+    .company {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .getstart {
+    padding: 18px 24px;
+    }
+    
   }
 
 

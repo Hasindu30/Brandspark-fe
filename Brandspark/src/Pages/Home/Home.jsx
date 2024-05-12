@@ -24,7 +24,7 @@ import cardimg6 from '../../assets/cardimg6.png'
 const Home = () => {
   
   return (
-    <div className='homecontainer'>
+    <div>
       <Navbar/>
       
       <div className="headertext">
@@ -194,14 +194,13 @@ Ready to take your business to the next level? Get in touch with our experts tod
             <li><img src={tick} alt="" />provide strategic guidance and implementation support </li>
           </ul>
         </div>
-        
-
-
       </div>
           
-      
-
-      
+            <div className="bottomtext">
+                  <p>Transform your imaginative idea into a company and brand</p>
+                  <input className='company' type="text" placeholder='Enter Your Company Name'/>
+                  <button className='getstart'>Get start</button>
+            </div>
     </div>
     
   )
