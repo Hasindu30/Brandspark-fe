@@ -3,12 +3,13 @@ import {Link} from 'react-router-dom'
 import './Navbar.css'
 import logo from '../../assets/logo2.png'
 import menures from '../../assets/menures.png'
+import Home from '../../Pages/Home/Home'
 
 const Navbar = () => {
   const [mobileMenu,setMobileMenu] =useState(false);
   const toggleMenu =()=>{
     mobileMenu? setMobileMenu(false) : setMobileMenu(true);
-  }
+  };
   return (
     <nav className='navbar'>
          <img src={logo} alt="" className='logo'/> 
