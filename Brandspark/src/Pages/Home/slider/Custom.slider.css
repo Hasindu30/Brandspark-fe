@@ -107,5 +107,39 @@
   .slider__item img {
     width: 100%;
     height: 100%;
+    margin-left: auto;
   }
-  
+  @media(max-width:1200px){
+    .container__slider{
+      width: 900px;
+      height:500px;
+      margin: auto;
+    }
+  }
+  @media(max-width:1000px){
+    .container__slider{
+      width: 800px;
+      height:500px;
+      margin: auto;
+    
+    }
+    @media(max-width:800px){
+      .container__slider{
+        width: 600px;
+        height:400px;
+        margin: auto;
+        padding: auto;
+      
+      }
+      @media(max-width:700px){
+        .container__slider{
+          width: 500px;
+          height:300px;
+          margin: auto;
+          padding: auto;
+         
+        
+        }
+      }
+    }
+  }

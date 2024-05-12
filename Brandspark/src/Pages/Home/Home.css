@@ -87,7 +87,7 @@
     color: #000000;
 }
 .logomaker-home img{
-    max-width: 500px;
+    max-width: 450px;
 
 }
 .logomaker-home p{
@@ -99,3 +99,286 @@
 .logomaker-home button{
     margin-top: 20px;
 }
+.homecard-header{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.homecard-header h1{
+    margin-top:130px;
+    font-family: "Outfit", sans-serif;
+    font-size: 40px;
+    color: #222224;
+    font-weight: 670;
+    
+    
+}
+.homecard-header p{
+    margin-top: 20px;
+    font-family: "Outfit", sans-serif;
+    color: #676e8b;
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+}
+
+.homecards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 80px;
+    margin-top: 100px;
+  }
+
+  .cardx {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor:pointer;
+  }
+
+  .cardimg img {
+    max-width: 100%;
+    height: 110px;
+    display: block;
+    margin: 0 auto;
+    
+    
+  }
+
+  .cardx h1 {
+    
+    color: #444444;
+    margin-bottom: 15px;
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+    
+    
+    
+  }
+
+  .cardx ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+    
+  }
+
+  .cardx ul li {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    color: #74676a;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    
+    
+  }
+  .cardx ul li img {
+    margin-right: 10px;
+    vertical-align:middle;
+    height: 20px;
+    
+  }
+  .cardx:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: 0.1s ease-in;
+  }
+
+.bottomtext{
+    background: #f4f6f8;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 40px;
+    
+}
+.bottomtext p{
+    font-size: 30px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;  
+}
+.bottomtext input{
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    box-shadow: none;
+    margin-right: 8px;
+    max-width: 424px;
+    padding: 16px 24px;
+    margin-top: 30px;
+    
+}
+.bottomtext input.company{
+    box-sizing: border-box;
+    color: #676e8b;
+    display: inline-block;
+    font-family:"Outfit", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    outline: none;
+    width: 100%;
+    
+}
+.bottomtext button.getstart{
+    background: #5340ff;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    padding: 18px 24px;
+    transition: 0.3s;
+    display: inline;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.bottomtext button.getstart:hover{
+    background: #2008f7;
+}
+
+
+
+  /* media query */
+  @media (max-width: 1200px) {
+    .headertext {
+      text-align: center;
+    }
+    .headertext h1 {
+      font-size: 34px;
+    }
+    .headertext button.getstart{
+        width: 100%;
+    }
+    .headertext p {
+      font-size: 14px;
+      margin: auto;
+    }
+    .company {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .getstart {
+      
+      padding: 18px 24px;
+    }
+    .slider img {
+      width: 100%;
+      
+    }
+    .logomockup img {
+      max-width: 90%;
+      align-items: center;
+      padding-left: 100px;
+
+    }
+    .homeheader h1 {
+      font-size: 24px;
+      text-align: center;
+    }
+    .logomaker-home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logomaker-home img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .homeleft {
+      text-align: center;
+    }
+    .homeleft p {
+      font-size: 14px;
+    }
+    .homecards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .cardx {
+      width: 70%;
+      margin: 10px;
+    }
+    .cardx h1 {
+      font-size: 18px;
+    }
+    .cardx ul {
+      padding-left: 20px;
+    }
+    .cardx ul li {
+      font-size: 14px;
+    }
+  }
+
+
+  @media (max-width: 850px) {
+    .headertext {
+      text-align: center;
+      margin: auto;
+    }
+    .headertext h1 {
+      font-size: 24px;
+    }
+    .headertext p {
+      font-size: 14px;
+    }
+    .company {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .getstart {
+    padding: 18px 24px;
+    }
+    .slider img {
+      width: 70%;
+      height: auto;
+    }
+    .logomockup img {
+        max-width: 80%;
+        align-items: center;
+        padding-left: 300px;
+        margin: auto;
+    }
+    .homeheader h1 {
+      font-size: 24px;
+      text-align: center;
+    }
+    .logomaker-home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logomaker-home img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .homeleft {
+      text-align: center;
+    }
+    .homeleft p {
+      font-size: 14px;
+    }
+    .bottomtext h1 {
+      font-size: 26px;
+      margin: auto;
+    }
+    .bottomtext p {
+      font-size: 14px;
+    }
+    .company {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .getstart {
+    padding: 18px 24px;
+    }
+    
+  }
+
+
+  

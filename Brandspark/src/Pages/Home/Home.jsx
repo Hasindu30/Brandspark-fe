@@ -9,6 +9,14 @@ import logomakerhome from '../../assets/logomakerhome.png'
 import brandhome from '../../assets/brandhome.png'
 import homecontact from '../../assets/homecontact.png'
 import homeexpert from '../../assets/homeexpert.png'
+import tick from '../../assets/tick.png'
+import cardimg1 from '../../assets/cardimg1.png'
+import cardimg2 from '../../assets/cardimg2.png'
+import cardimg3 from '../../assets/cardimg3.png'
+import cardimg4 from '../../assets/cardimg4.png'
+import cardimg5 from '../../assets/cardimg5.png'
+import cardimg6 from '../../assets/cardimg6.png'
+
 
 
 
@@ -74,7 +82,7 @@ const Home = () => {
         <div className="logomaker-home">
       <img src={homecontact} alt=""/>
         <div className="homeleft">
-        <h1>Contact to Brandspark to your business</h1>
+        <h1>Contact to Brandspark for your business</h1>
           <p>To get start with Brandspark AI-powered platform 
             to promote your own brand and bring your brand to life contact us and visit 
             our Ridiculous packages.You can get all the support you need to develop your business 
@@ -94,10 +102,105 @@ Ready to take your business to the next level? Get in touch with our experts tod
           </p>
           <button className='getstart'>Get start</button>
         </div>
+        <div className="logomakerimg">
         <img src={homeexpert} alt=""/>
         </div>
+        </div>
+
+
+
+          <div className="homecard-header">
+          <h1>Brandspark is best partner of your Business</h1>
+          <p>provides everything you need to start your business and Brandspark amazing right now. <br />
+          You maintain creative control while artificial intelligence handles the labor-intensive graphic design tasks. </p>
+          </div>
         
-      
+      <div className="homecards">
+        
+        <div className="cardx">
+          <div className="cardimg">
+            <img src={cardimg1} alt="" />
+          </div>
+          <h1> Brandname</h1>
+          <ul>
+            <li><img src={tick} alt="" />Create your own brand name to your future company</li>
+            <li><img src={tick} alt="" />AI technology create professional and creative brandname</li>
+            <li><img src={tick} alt="" />You can genarate your brand name with your target audience</li>
+            <li><img src={tick} alt="" />Brandspark can suggest names that evoke feelings of trust </li>
+          </ul>
+        </div>
+
+        <div className="cardx">
+          <div className="cardimg">
+            <img src={cardimg2} alt="" />
+          </div>
+          <h1>Create your logos</h1>
+          <ul>
+            <li><img src={tick} alt="" />Create your own logo to company</li>
+            <li><img src={tick} alt="" />Easily alter colors, symbols, size with Brandspark.</li>
+            <li><img src={tick} alt="" />Use filters and explore diverse logo ideas</li>
+            <li><img src={tick} alt="" />rowse 1000’s of personalized and AI generated logo designs online</li>
+          </ul>
+        </div>
+
+        <div className="cardx">
+          <div className="cardimg">
+            <img src={cardimg3} alt="" />
+          </div>
+          <h1>Brand kit</h1>
+          <ul>
+            <li><img src={tick} alt="" />Increase your company's revenue with high-caliber marketing collateral</li>
+            <li><img src={tick} alt="" />View actual mockups of your logo on pencils, T-shirts, and other items</li>
+            <li><img src={tick} alt="" />advertising campaigns across various platforms</li>
+            <li><img src={tick} alt="" />Monitor social media conversations and sentiment related to your brand  </li>
+          </ul>
+        </div>
+        <div className="cardx">
+          <div className="cardimg">
+            <img src={cardimg4} alt="" />
+          </div>
+          <h1>Analyse your business</h1>
+          <ul>
+            <li><img src={tick} alt="" />analyze large datasets from various sources</li>
+            <li><img src={tick} alt="" />Brandsparkcan uncover patterns, trends, and correlations</li>
+            <li><img src={tick} alt="" />Implement predictive analytics models </li>
+            <li><img src={tick} alt="" />analyze customer feedback and social media conversations about your brand</li>
+          </ul>
+        </div>
+          
+
+        <div className="cardx">
+          <div className="cardimg">
+            <img src={cardimg5} alt="" />
+          </div>
+          <h1>Best Brandspark packages</h1>
+          <ul>
+            <li><img src={tick} alt="" />Brandspark has an interesting number of packages</li>
+            <li><img src={tick} alt="" />There are packages with many special privileges</li>
+            <li><img src={tick} alt="" />A host of exclusive perks are available at unbelievable prices</li>
+            <li><img src={tick} alt="" />Choose the right package to grow your company</li>
+          </ul>
+        </div>
+
+        <div className="cardx">
+          <div className="cardimg">
+            <img src={cardimg6} alt="" />
+          </div>
+          <h1>Experts</h1>
+          <ul>
+            <li><img src={tick} alt="" />Brandspark have world best experts staff and ai based experts</li>
+            <li><img src={tick} alt="" />brand promotion efforts align with your brand values</li>
+            <li><img src={tick} alt="" />advise on ethical considerations related to data privacy, algorithmic bias</li>
+            <li><img src={tick} alt="" />provide strategic guidance and implementation support </li>
+          </ul>
+        </div>
+      </div>
+          
+            <div className="bottomtext">
+                  <p>Transform your imaginative idea into a company and brand</p>
+                  <input className='company' type="text" placeholder='Enter Your Company Name'/>
+                  <button className='getstart'>Get start</button>
+            </div>
     </div>
     
   )

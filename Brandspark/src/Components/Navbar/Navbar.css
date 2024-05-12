@@ -6,6 +6,7 @@
     color: #090b17;
     padding: 4px 0 ;
     position: fixed;
+    right: 0;
     top: 0;
     left: 0;
     display: flex;
@@ -13,8 +14,8 @@
     justify-content:space-between;
     z-index: 100;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 30px;
+    
     
 }
 
@@ -22,8 +23,13 @@
     width: 60px;
 
 }
+.navbar-mid{
+    align-items: center;
+    justify-content: center;
+}
+
 .navbar-mid  li{
-    display: inline;
+    display: inline-block;
     list-style: none;
     margin: 5px 32px;
     font-size: 16px;
@@ -31,10 +37,12 @@
     font-family:"Outfit", sans-serif;
     
     
-    
-    
+}
+.navbar-mid{
+    padding-left: 100px;
 }
 .navbar-right  li{
+   
     display: inline-block;
     list-style: none;
     margin: 5px 15px;
@@ -61,5 +69,94 @@
 .navbar-right li:hover{
     color: #757373;
 }
+.response li{
+    display: none;
+    margin: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family:"Outfit", sans-serif; 
+
+}
+.response li:hover{
+    color: #f3c2c2;
+}
+.menures{
+    width: 30px;
+    margin-top: 0;
+    display: none;
+    cursor: pointer;
+}
+.menures:hover{
+    width: 31px;
+    
+}
+.hide-mobile-menu li{
+    right: 200px;
+    display: none;
+    transition: 0.5s;
+    
+}
 
 /*-------- media query-------*/
+
+@media (max-width:1250px){
+    .navbar{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .btnnav{
+        padding: 14px 22px;
+    }
+    .navbar-mid{
+        padding-left: 0;
+    }
+}
+@media (max-width:1050px){
+    .navbar ul li{
+        margin: 10px 15px;
+    }
+}
+@media (max-width:850px){
+    .navbar{
+        padding: 15px 0;
+    }
+    .navbar-right li{
+        display: none;
+    }
+    .navbar-mid li{
+        display: none;
+    }
+    .response{
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #5340ff;
+        z-index: -1;
+        width: 200px;
+        padding-top: 60px;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .response li{
+        
+        display: inline;
+        color: #fff;
+        
+        
+    }
+    .menures{
+        width: 30px;
+        margin-top: 0;
+        display: block;
+        margin-right: 20px;
+    }
+    .hide-mobile-menu{
+        right: -200px;
+        transition: 0.5s;
+    }
+}
