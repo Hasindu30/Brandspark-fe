@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../Components/Navbar/Navbar'
 import './Signup.css';
 
+
 const Login = () => {
   return (
     
@@ -31,6 +32,7 @@ const Login = () => {
           </div>
         </form>
       </div>
+     
     </div>
   );
 };
