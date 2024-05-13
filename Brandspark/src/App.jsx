@@ -7,6 +7,7 @@ import  Expertsignup from './Pages/Expertsignup'
 import Footer from './Components/Footer'
 import CreateLogo from './Pages/CreateLogo/CreateLogo'
 import Expert from './Pages/Expert/Expert'
+import Sample from './Pages/Sample'
 
 
 
@@ -17,6 +18,9 @@ const App = () => {
     <div>
      <Navbar/>
      <Home/>
+     
+    
+     
      
      
       
