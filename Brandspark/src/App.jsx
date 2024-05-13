@@ -7,6 +7,7 @@ import  Expertsignup from './Pages/Expertsignup'
 import Footer from './Components/Footer'
 import CreateLogo from './Pages/CreateLogo/CreateLogo'
 import Expert from './Pages/Expert/Expert'
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 
 
@@ -15,8 +16,19 @@ const App = () => {
   
   return (
     <div>
-     <Navbar/>
-     <Home/>
+      <BrowserRouter>
+      <Navbar/>
+     
+     <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/Logomaker' element={<CreateLogo/>}/>
+      
+      <Route path='/Login' element={<Login/>}/>
+      <Route path='/Signup' element={<Signup/>}/>
+     </Routes>
+      
+      </BrowserRouter>
+    
      
      
       
