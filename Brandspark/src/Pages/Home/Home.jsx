@@ -25,7 +25,7 @@ const Home = () => {
   
   return (
     <div>
-      <Navbar/>
+      
       
       <div className="headertext">
         <h1>Design brand of your own Business</h1>
