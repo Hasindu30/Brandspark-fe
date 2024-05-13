@@ -7,7 +7,7 @@ const Login = () => {
   return (
     
     <div>
-      <Navbar/>
+      
       <div className="wrapper">
         <form action="#">
           <h2>Login</h2>

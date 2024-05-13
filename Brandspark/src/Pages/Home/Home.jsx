@@ -16,6 +16,7 @@ import cardimg3 from '../../assets/cardimg3.png'
 import cardimg4 from '../../assets/cardimg4.png'
 import cardimg5 from '../../assets/cardimg5.png'
 import cardimg6 from '../../assets/cardimg6.png'
+import { Link } from 'react-router-dom'
 
 
 
@@ -61,7 +62,7 @@ const Home = () => {
            that is more precise? 
           Not a problem! To narrow down the logos and find a design that truly works for your company, you may enter keywords.
           </p>
-          <button className='getstart'>Get start</button>
+          <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Logomaker'><button className='getstart'>Get start</button></Link>
         </div>
         </div>
 
