@@ -1,22 +1,18 @@
-* {
-  
-  font-family: Open Sans;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-distributed {
+.fotteradj{
   background: #626161;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
+
   width: 100%;
+  height: auto;
+  
+ 
   text-align: left;
   font: bold 16px sans-serif;
-  padding: 20px 0; /* Adjusted padding */
-  margin-bottom: -100px;
-  bottom: 0; /* Position at the bottom */
-  left: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
 }
+
+
 
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
@@ -188,4 +184,121 @@
   border-radius: 10%;
   object-fit: cover;
   height: 40px;
+}
+
+
+
+
+@media (max-width:1250px){
+  .otteradj{
+    padding-left: 5%;
+    padding-right: 10%;
+  }
+  .footer-right .footer-icons{
+    padding-right: 40%;
+  }
+  .footer-icons ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create 4 columns */
+    grid-gap: 5px;
+  }
+}
+@media (max-width:1050px){
+  .footer-center div{
+    display: none;
+    
+  }
+  .footer-left{
+    padding-left: 10%;
+  }
+  .footer-right{
+    margin-left: -10%;
+    margin-right: -20%;
+    
+  }
+
+}
+@media (max-width:850px){
+
+
+  .footer-left ul{
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 130%;
+     
+    
+
+  }
+  .footer-left .footer-links{
+    margin-left: 30%;
+    margin-right: -150%;
+    margin-top: -3%;
+    text-align: center;
+    
+  }
+  .footer-left .footer-company-name{
+    margin-left: 105%;
+    margin-right: -180%;
+    margin-top: -3%;
+  }
+  .footer-right .footer-company-about{
+    
+    padding-top: 200px;
+    margin-left: -200%;
+    margin-right: 67%;
+    text-align: center;  
+  }
+ 
+  .footer-right .footer-icons .icons{
+
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;
+    margin-left: -278%;
+    
+  }
+
+}
+@media (max-width:550px){
+
+
+  .footer-left ul{
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 120%;
+     
+    
+
+  }
+  .footer-left .footer-links{
+    margin-left: 30%;
+    margin-right: -145%;
+    margin-top: -3%;
+    text-align: center;
+    
+  }
+  .footer-left .footer-company-name{
+    margin-left: 95%;
+    margin-right: -180%;
+    margin-top: -3%;
+  }
+  .footer-right .footer-company-about{
+    
+    padding-top: 200px;
+    margin-left: -200%;
+    margin-right: 50%;
+    text-align: center;  
+  }
+ 
+  .footer-right .footer-icons .icons{
+
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;
+    margin-left: -288%;
+    
+  }
+
 }

@@ -1,4 +1,5 @@
 import React, {useState,useEffect} from 'react'
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar'
 import Signup from './Pages/Signup'
 import Login from './Pages/Login'
@@ -7,7 +8,6 @@ import  Expertsignup from './Pages/Expertsignup'
 import Footer from './Components/Footer'
 import CreateLogo from './Pages/CreateLogo/CreateLogo'
 import Expert from './Pages/Expert/Expert'
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 
 
@@ -29,6 +29,9 @@ const App = () => {
       
       </BrowserRouter>
     
+     
+    
+     
      
      
       
