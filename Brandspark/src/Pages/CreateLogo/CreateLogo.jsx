@@ -18,7 +18,7 @@ import logobk2 from '../../assets/Logoimages/logobk2.png'
 const CreateLogo = () => {
   return (
     <div>
-    <Navbar/>
+    
     <div className='upper'>
     <div className='toptext'><br/><br/>
     <h1 className='bs'>Create your own logo <br />with us</h1>

@@ -191,7 +191,7 @@
 
 .bottomtext{
     background: #f4f6f8;
-    width: 100%;
+    max-width: 100%;
     text-align: center;
     margin-bottom: 30px;
     padding: 40px;
