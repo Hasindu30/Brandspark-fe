@@ -24,6 +24,7 @@ const App = () => {
       <Route path='/Logomaker' element={<CreateLogo/>}/>
       <Route path='/Login' element={<Login/>}/>
       <Route path='/Signup' element={<Signup/>}/>
+      <Route path='/Experts' element={<Expert/>}/>
      </Routes>
      <Footer/>
       

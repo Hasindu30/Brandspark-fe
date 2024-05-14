@@ -73,7 +73,7 @@ const CreateLogo = () => {
 
 
 
-    <Footer/>
+    
     </div>
   )
 }

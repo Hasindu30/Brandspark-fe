@@ -189,7 +189,7 @@
     transition: 0.1s ease-in;
   }
 
-.bottomtext{
+.bottomtext1{
     background: #f4f6f8;
     max-width: 100%;
     text-align: center;
@@ -197,12 +197,12 @@
     padding: 40px;
     
 }
-.bottomtext p{
+.bottomtext1 p{
     font-size: 30px;
     font-family: "Outfit", sans-serif;
     font-weight: 700;  
 }
-.bottomtext input{
+.bottomtext1 input{
     background-color: #ffffff;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -213,7 +213,7 @@
     margin-top: 30px;
     
 }
-.bottomtext input.company{
+.bottomtext1 input.company{
     box-sizing: border-box;
     color: #676e8b;
     display: inline-block;
@@ -224,7 +224,7 @@
     width: 100%;
     
 }
-.bottomtext button.getstart{
+.bottomtext1 button.getstart{
     background: #5340ff;
     border-radius: 4px;
     border: none;
@@ -235,7 +235,7 @@
     box-sizing: border-box;
     display: inline-block;
 }
-.bottomtext button.getstart:hover{
+.bottomtext1 button.getstart:hover{
     background: #2008f7;
 }
 
