@@ -14,17 +14,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     
-    padding: 0 10px;
+    
+    
     font-family: "Roboto", sans-serif;
     
  
   }
 
   .wrapper {
+    margin-top: 100px;
+
     width: 400px;
     border-radius: 8px;
+    padding-top: 0;
     padding: 50px;
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.5);
@@ -39,8 +42,9 @@
   }
   
   h2 {
+    margin-top: 0;
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #000000;
   }
   
