@@ -131,14 +131,64 @@
     background-color: rgb(246, 255, 255);
     filter: saturate(110%);
 }
+.onlineexpert{
+    background-color: #5340ff;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    
+
+}
+.onlineexpert h1{
+    color: #fff;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-size: 45px;
+    
+}
+.onlineexpert p{
+    color: #d7d5d5;
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top:-5px;
+    
+    
+}
+.onlineexpert button.onlinehelp{
+    background-color:rgb(255, 107, 84);
+    border-radius: 5px;
+    padding: 15px 18px;
+    font-size: 28px;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+.onlineexpert button.onlinehelp:hover{
+    background-color:rgb(167, 33, 0);
+}
 .bottomtext ul{
     list-style-type: none;
     opacity: 90%;
+    align-content: center;
+    justify-content: center;
+    
 }
 .bottomtext li{
-    margin-top: 10px;
+    margin-top: 60px;
     margin-left: 10%;
     margin-right: 15%;
+    text-align: center;
+    justify-content: center;
 
 }
 .bottomtext span{
