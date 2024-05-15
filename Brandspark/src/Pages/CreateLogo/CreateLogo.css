@@ -62,7 +62,8 @@
 
 .logoidea{
     margin-top: 100px;
-    height: 1400px;
+    height: 100%;
+    width: 100%;
     display:inline-block;
     background-color: rgb(233, 251, 255);
     margin-left: 0;
@@ -78,16 +79,20 @@
 }
 
 .logoimages li img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 390px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 30px;
     padding-bottom: 10px;
     border-radius: 40px;
-    transition-duration: 0.5s;
+    transition: transform;
+    transition-duration: 0.3s;
 }
 .logoimages li img:hover{
-    opacity: 70%;
+    transform: scale(1.018);
 }
 .logoimages .line1{
     display: flex;
@@ -98,6 +103,10 @@
     list-style-type:none;
 }
 .logoimages .line3{
+    display: flex;
+    list-style-type:none;
+}
+.logoimages .line4{
     display: flex;
     list-style-type:none;
 }

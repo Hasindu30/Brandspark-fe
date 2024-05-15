@@ -12,6 +12,9 @@ import gl6 from '../../assets/Logoimages/gl6.png'
 import gl7 from '../../assets/Logoimages/gl7.jpg'
 import gl8 from '../../assets/Logoimages/gl8.jpg'
 import gl9 from '../../assets/Logoimages/gl9.png'
+import gl10 from '../../assets/Logoimages/gl10.jpg'
+import gl11 from '../../assets/Logoimages/gl11.jpg'
+import gl12 from '../../assets/Logoimages/gl12.png'
 import logobk2 from '../../assets/Logoimages/logobk2.png'
 
 
@@ -45,6 +48,11 @@ const CreateLogo = () => {
             <li><img src={gl7} alt="gl7" /></li>
             <li><img src={gl8} alt="gl8" /></li>
             <li><img src={gl9} alt="gl9" /></li>
+          </ul>
+          <ul className='line4'>
+            <li><img src={gl10} alt="gl10" /></li>
+            <li><img src={gl11} alt="gl11" /></li>
+            <li><img src={gl12} alt="gl12" /></li>
           </ul>
           </div>
        </div>
