@@ -164,6 +164,14 @@ const Expert = () => {
           </div>
 
         </div>
+        <div className="onlineexpert">
+          <h1>Get start analyze your business <br/>with online expert </h1>
+          <p>Use Brandspark's AI-powered experts and get help to 
+            optimize your marketing strategies, enhance your brand 
+            identity, or streamline your operations, Brandspark online experts are here
+          </p>
+          <button className='onlinehelp'>Get Help Now</button>
+        </div>
 
         <div className='bottomtext'>
             <ul>

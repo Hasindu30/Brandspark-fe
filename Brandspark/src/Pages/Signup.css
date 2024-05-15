@@ -10,9 +10,11 @@
     align-content: center;
     
     
+    
   }
   
   body {
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +25,6 @@
   }
 
   .wrapper {
-    
     align-items: center;
     width: 400px;
     border-radius: 8px;
