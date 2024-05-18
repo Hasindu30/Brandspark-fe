@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import {Link} from 'react-router-dom'
 import './Navbar.css'
 import logo from '../../assets/logo2.png'
 import menures from '../../assets/menures.png'
+import { NavLink } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -12,19 +12,19 @@ const Navbar = () => {
   };
   return (
     <nav className='navbar'>
-         <Link to='/'><img src={logo} alt="" className='logo'/> </Link>
+         <NavLink to='/'><img src={logo} alt="" className='logo'/> </NavLink>
           
             <ul className='navbar-mid'>
-                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/'>Home</Link></li>
-                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Logomaker'>Logo maker</Link></li>
+                <li><NavLink activeClassName='active-link' style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/'>Home</NavLink></li>
+                <li><NavLink to='/Logomaker' activeClassName='active-link' style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} >Logo maker</NavLink></li>
                 <li>Brand kit</li>
-                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'>Contact</Link></li>
-                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Experts'>Experts</Link></li>
+                <li><NavLink style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'>Contact</NavLink></li>
+                <li><NavLink style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Experts'>Experts</NavLink></li>
                 
             </ul>
             <ul className='navbar-right'>
-            <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Login'>Login</Link></li>
-            <li className='btnnav'><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Signup'>Signup</Link></li>
+            <li><NavLink activeClassName='active-link' style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Login'>Login</NavLink></li>
+            <li className='btnnav'><NavLink activeClassName='active-link' style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Signup'>Signup</NavLink></li>
             </ul>
             
           <ul className={mobileMenu ? 'response' : 'hide-mobile-menu'}>
