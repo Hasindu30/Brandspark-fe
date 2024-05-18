@@ -1,92 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-.upper{
-    background-color: rgb(233, 251, 255);
-    height: 470px;
-    width: 100%;
-}
-.toptext{
-    
-    
-    margin-top: 10%;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-   
-    
-}
-
-.toptext .bs{
-    font-size: 48pt;
-    font-family:'Times New Roman', Times, serif;
-    color: rgb(0, 0, 0);
-    margin-left: 10%;
-}
-
-.toptext .bs3{
-    font-size: 13pt;
-    margin-right: 50%;
-    color: rgb(51, 51, 51);
-    opacity: 90%;
-    line-height: 1.5;
-    margin-left: 10%;
-}
-
-.logodesign{
-    margin-top: -28%;
-}
-
-.logodesign img{
-    height: 350px;
-    width: auto;
-    border-radius: 25px;
-    margin-left: 68%;
-    
-}
-
-.logoidea{
-    width: 100%;
-    height: 1400px;
-   
-    left: 0;
-    right: 0;
-    background-color: rgb(233, 251, 255);
-}
-.logoidea{
+.logoheadertext{
     text-align: center;
+    margin-bottom: 0;
 }
-.button{
+.logoheadertext h1{
+    font-size: 50px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    padding-top: 120px;
     
-    margin-left: 10%;
-    display: flex;
-    margin-top: -5%;
+}
+.logoheadertext p{
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #676e8b;
+  margin-top: 28px;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 280px;
+  margin-right: 280px;
+}
+.logoheadertext input{
+    background-color: #f4f6f8;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    box-shadow: none;
+    margin-right: 8px;
+    max-width: 424px;
+    padding: 16px 24px;
+    margin-top: 30px;
     
-
 }
-.button h1{
-    font-family: 'Times New Roman', Times, serif;
-    opacity: 90%;
+.logoheadertext input.logom{
+    box-sizing: border-box;
+    color: #676e8b;
+    display: inline-block;
+    font-family:"Outfit", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    outline: none;
+    width: 100%;
+    
 }
-.button button{
+.logoheadertext button.getstart{
     background: #5340ff;
     border-radius: 4px;
     border: none;
     color: #fff;
-    padding: 12px 20px;
+    padding: 18px 24px;
     transition: 0.3s;
+    display: inline;
+    box-sizing: border-box;
+    display: inline-block;
 }
-.button button:hover{
+.logoheadertext button.getstart:hover{
     background: #2008f7;
 }
+
+.logoidea{
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    display:inline-block;
+    background-color: rgb(233, 251, 255);
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logoidea h1{
+    text-align: center;
+    font-family:"Outfit", sans-serif;
+    font-size: 40px;
+}
+
 .logoimages li img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 390px;
-    width: auto;
-    margin-left: 40px;
-    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 30px;
     padding-bottom: 10px;
-    border-radius: 25px;
-    transition-duration: 0.5s;
+    border-radius: 40px;
+    transition: transform;
+    transition-duration: 0.3s;
 }
 .logoimages li img:hover{
-    opacity: 70%;
+    transform: scale(1.018);
 }
 .logoimages .line1{
     display: flex;
@@ -100,19 +106,18 @@
     display: flex;
     list-style-type:none;
 }
-.logoidea h1{
-    font-size: 30pt;
-    font-family:'Times New Roman', Times, serif;
-    color: rgb(0, 0, 0);
-    opacity: 90%;
+.logoimages .line4{
+    display: flex;
+    list-style-type:none;
 }
+
 .bottomimage ul{
     display: flex;
     list-style-type: none;
 }
 .bottomimage li img{
     height: 350px;
-    width: auto;
+    
     margin-left: 16%;
     margin-top: 10%;
 }

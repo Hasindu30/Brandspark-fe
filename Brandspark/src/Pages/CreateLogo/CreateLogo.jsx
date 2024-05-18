@@ -3,43 +3,36 @@ import './CreateLogo.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer';
 import logodesign from '../../assets/logodesign.png'
-import gl1 from '../../assets/Logoimages/gl1.png'
-import gl2 from '../../assets/Logoimages/gl2.png'
-import gl3 from '../../assets/Logoimages/gl3.png'
+import gl1 from '../../assets/Logoimages/gl1.jpeg'
+import gl2 from '../../assets/Logoimages/gl2.jpg'
+import gl3 from '../../assets/Logoimages/gl3.jpg'
 import gl4 from '../../assets/Logoimages/gl4.png'
 import gl5 from '../../assets/Logoimages/gl5.png'
 import gl6 from '../../assets/Logoimages/gl6.png'
-import gl7 from '../../assets/Logoimages/gl7.png'
-import gl8 from '../../assets/Logoimages/gl8.png'
+import gl7 from '../../assets/Logoimages/gl7.jpg'
+import gl8 from '../../assets/Logoimages/gl8.jpg'
 import gl9 from '../../assets/Logoimages/gl9.png'
+import gl10 from '../../assets/Logoimages/gl10.jpg'
+import gl11 from '../../assets/Logoimages/gl11.jpg'
+import gl12 from '../../assets/Logoimages/gl12.png'
 import logobk2 from '../../assets/Logoimages/logobk2.png'
 
 
 const CreateLogo = () => {
   return (
     <div>
-    <Navbar/>
-    <div className='upper'>
-    <div className='toptext'><br/><br/>
-    <h1 className='bs'>Create your own logo <br />with us</h1>
-    <br/>
-    <h2 className='bs3'>Unlock Your Brand's Full Potential: Trust BrandSpark for Expert Logo Creation and Generation. 
-    Let Our Creative Team Ignite Your Spark of Success! Discover the Perfect Emblem to Illuminate Your Brand's Journey.</h2>
-    </div>
-
-    <div className='logodesign'>
-      <img src={logodesign} alt="logodesign" />
-    </div>
-   
-    <div className='button'> <h1 className='gtext'>Generate a Logo</h1>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit">Get started</button>
-
-    </div>
     
-    </div><br /><br /><br /><br /><br />
+    <div className="logoheadertext">
+        <h1>Brandspark Logo Maker</h1>
+        <p>Brandspark Logo Maker helps you develop a unique
+           logo you'll adore by fusing artificial intelligence with your preferred logo design. 
+           Five minutes and a few clicks are all that are required.</p>
+        <input className='logom' type="text" placeholder='Enter Your Company Name'/>
+        <button className='getstart'>Create Logo</button>
+      </div>
 
-    <div className='logoidea'><br/><br />
-        <h1>Unique logo concepts designed just for you</h1><br /><br />
+    <div className='logoidea'>
+        <h1>Unique logo concepts designed just for you</h1>
         <div className='logoimages'>
           <ul className='line1'>
             <li><img src={gl1} alt="gl1" /></li>
@@ -56,8 +49,13 @@ const CreateLogo = () => {
             <li><img src={gl8} alt="gl8" /></li>
             <li><img src={gl9} alt="gl9" /></li>
           </ul>
+          <ul className='line4'>
+            <li><img src={gl10} alt="gl10" /></li>
+            <li><img src={gl11} alt="gl11" /></li>
+            <li><img src={gl12} alt="gl12" /></li>
+          </ul>
           </div>
-          </div>
+       </div>
           <div className='bottomimage'>
             <ul>
             <li><img src={logobk2} alt="logobk2" /></li>
@@ -73,7 +71,7 @@ const CreateLogo = () => {
 
 
 
-    <Footer/>
+    
     </div>
   )
 }

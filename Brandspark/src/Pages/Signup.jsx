@@ -8,6 +8,7 @@ const Signup = () => {
         <div>
 
 <div className="wrapper">
+  
       <form action="#">
         <h2>Sign Up</h2>
         <div className="input-field">

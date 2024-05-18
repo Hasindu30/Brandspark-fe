@@ -8,6 +8,7 @@ import  Expertsignup from './Pages/Expertsignup'
 import Footer from './Components/Footer'
 import CreateLogo from './Pages/CreateLogo/CreateLogo'
 import Expert from './Pages/Expert/Expert'
+import Contact from './Pages/Contact/Contact';
 
 
 
@@ -24,7 +25,10 @@ const App = () => {
       <Route path='/Logomaker' element={<CreateLogo/>}/>
       <Route path='/Login' element={<Login/>}/>
       <Route path='/Signup' element={<Signup/>}/>
+      <Route path='/Experts' element={<Expert/>}/>
+      <Route path='/Contact' element={<Contact/>}/>
      </Routes>
+     <Footer/>
       
       </BrowserRouter>
     

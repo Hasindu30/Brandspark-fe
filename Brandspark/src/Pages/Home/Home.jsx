@@ -32,7 +32,7 @@ const Home = () => {
         <h1>Design brand of your own Business</h1>
         <p>Utilize Brandspark AI-powered platform to promote your own brand </p>
         <input className='company' type="text" placeholder='Enter Your Company Name'/>
-        <button className='getstart'>Get start</button>
+        <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Logomaker'><button className='getstart'>Get start</button></Link>
       </div>
       
       <div className="slider">
@@ -101,7 +101,7 @@ const Home = () => {
         
 Ready to take your business to the next level? Get in touch with our experts today to schedule a consultation.
           </p>
-          <button className='getstart'>Get start</button>
+          <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Experts'><button className='getstart'>Get start</button></Link>
         </div>
         <div className="logomakerimg">
         <img src={homeexpert} alt=""/>
@@ -197,7 +197,7 @@ Ready to take your business to the next level? Get in touch with our experts tod
         </div>
       </div>
           
-            <div className="bottomtext">
+            <div className="bottomtext1">
                   <p>Transform your imaginative idea into a company and brand</p>
                   <input className='company' type="text" placeholder='Enter Your Company Name'/>
                   <button className='getstart'>Get start</button>

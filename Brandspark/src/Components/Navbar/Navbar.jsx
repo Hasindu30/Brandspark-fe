@@ -18,8 +18,8 @@ const Navbar = () => {
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/'>Home</Link></li>
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Logomaker'>Logo maker</Link></li>
                 <li>Brand kit</li>
-                <li>Contact</li>
-                <li>Experts</li>
+                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'>Contact</Link></li>
+                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Experts'>Experts</Link></li>
                 
             </ul>
             <ul className='navbar-right'>
