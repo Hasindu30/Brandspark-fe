@@ -1,6 +1,4 @@
-import React, {useState,useEffect} from 'react'
-import Footer from '../../Components/Footer'
-import Navbar from '../../Components/Navbar/Navbar'
+import React from 'react'
 import './Home.css'
 import images from '../Home/data/images'
 import CustomSlider from '../Home/slider/Custom.slider'

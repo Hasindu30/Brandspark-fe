@@ -15,8 +15,6 @@
     z-index: 100;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding-left: 30px;
-    
-    
 }
 
 .logo{
@@ -36,8 +34,6 @@
     font-size: 16px;
     cursor: pointer;
     font-family:"Outfit", sans-serif;
-    
-    
 }
 .navbar-mid{
     padding-left: 100px;
@@ -79,7 +75,6 @@
     font-size: 16px;
     cursor: pointer;
     font-family:"Outfit", sans-serif; 
-
 }
 .response li:hover{
     color: #f3c2c2;
