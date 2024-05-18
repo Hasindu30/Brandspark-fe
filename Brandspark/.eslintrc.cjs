@@ -17,5 +17,9 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    "react/no-unescaped-entities": [
+      enabled, 
+      { "forbid": Array[string] },
+    ],
   },
 }
