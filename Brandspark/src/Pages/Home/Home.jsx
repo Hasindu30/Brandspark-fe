@@ -85,8 +85,7 @@ const Home = () => {
           <p>To get start with Brandspark AI-powered platform 
             to promote your own brand and bring your brand to life contact us and visit 
             our Ridiculous packages.You can get all the support you need to develop your business 
-            through Brandspark.Contact us today without delay.
-          </p>
+            through Brandspark.Contact us today without delay.</p>
           <button className='getstart'>Get start</button>
         </div>
         </div>
@@ -95,10 +94,10 @@ const Home = () => {
       
         <div className="homeleft">
         <h1>Analyze your business with Brandspark's experts</h1>
-          <p>Whether you're looking to optimize your marketing strategies, enhance your brand identity, or streamline your operations, our experts are here to help. By leveraging years of industry experience and cutting-edge analytical tools, we provide actionable recommendations tailored to your specific needs.
-        
-Ready to take your business to the next level? Get in touch with our experts today to schedule a consultation.
-          </p>
+          <p>Whether you're looking to optimize your marketing strategies, enhance your brand identity, or 
+            streamline your operations, our experts are here to help. By leveraging years of industry experience
+             and cutting-edge analytical tools, we provide actionable recommendations tailored to your specific needs.Ready to take your 
+             business to the next level? Get in touch with our experts today to schedule a consultation.</p>
           <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Experts'><button className='getstart'>Get start</button></Link>
         </div>
         <div className="logomakerimg">
