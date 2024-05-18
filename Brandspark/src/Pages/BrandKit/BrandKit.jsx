@@ -1,3 +1,4 @@
+import React from 'react'
 import './BrandKit.css'
 import icon1 from '../../assets/BrandKit/icon1.png'
 import icon2 from '../../assets/BrandKit/icon2.png'
