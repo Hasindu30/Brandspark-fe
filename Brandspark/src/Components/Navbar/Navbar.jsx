@@ -17,7 +17,7 @@ const Navbar = () => {
             <ul className='navbar-mid'>
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/'>Home</Link></li>
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Logomaker'>Logo maker</Link></li>
-                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/BrandKit'>Brand kit</Link></li>
+                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/BrandKit'>Brand Kit</Link></li>
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'>Contact</Link></li>
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Experts'>Experts</Link></li>
                 
@@ -27,18 +27,19 @@ const Navbar = () => {
             <li className='btnnav'><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Signup'>Signup</Link></li>
             </ul>
             
-          <ul className={mobileMenu ? 'response' : 'hide-mobile-menu'}>
+      <ul className={mobileMenu ? 'response' : 'hide-mobile-menu'}>
+        <li>Home</li>
+        <li>Logo Maker</li>
+        <li>Brand Kit</li>
+        <li>Contact</li>
+        <li>Experts</li>
+        <li>Login</li>
+        <li>Signup</li>
+      </ul>
 
-                <li>Home</li>
-                <li>Logo maker</li>
-                <li>Brand Kit</li>
-                <li>Contact</li>
-                <li>Experts</li>
-                <li>Login</li>
-                <li>Signup</li>
-          </ul>
-          <img src={menures} alt="" className='menures' onClick={toggleMenu}/>
-        </nav>
+      <img src={menures} alt="" className='menures' onClick={toggleMenu}/>
+
+    </nav>
   )
 }
 

@@ -39,13 +39,10 @@ const BrandKit = () => {
                 </div>
             </div>
 
-            <div>
-            
-            </div>
 
             <div className= "container">
                 <h1>All-in-One marketing toolkit</h1>
-                <p>BrandSpark’s BrandKit is like having your own designer. As a member, you can change and get new designs anytime — all from one easy-to-use dashboard.</p>
+                <p>BrandSpark's BrandKit is like having your own designer. As a member, you can change and get new designs anytime — all from one easy-to-use dashboard.</p>
             </div>
             
 
@@ -53,4 +50,4 @@ const BrandKit = () => {
     )
 }
 
-export default BrandKit
+export default BrandKit;
