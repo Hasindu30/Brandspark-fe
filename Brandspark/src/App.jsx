@@ -8,7 +8,11 @@ import  Expertsignup from './Pages/Expertsignup'
 import Footer from './Components/Footer'
 import CreateLogo from './Pages/CreateLogo/CreateLogo'
 import Expert from './Pages/Expert/Expert'
+
+import BrandKit from './Pages/BrandKit/BrandKit';
+
 import Contact from './Pages/Contact/Contact';
+
 
 
 
@@ -26,7 +30,11 @@ const App = () => {
       <Route path='/Login' element={<Login/>}/>
       <Route path='/Signup' element={<Signup/>}/>
       <Route path='/Experts' element={<Expert/>}/>
+
+      <Route path='/BrandKit' element={<BrandKit/>}/>
+
       <Route path='/Contact' element={<Contact/>}/>
+
      </Routes>
      <Footer/>
       

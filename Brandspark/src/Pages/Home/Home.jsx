@@ -1,4 +1,6 @@
 import React, {useState,useEffect} from 'react'
+import Footer from '../../Components/Footer'
+import Navbar from '../../Components/Navbar/Navbar'
 import './Home.css'
 import images from '../Home/data/images'
 import CustomSlider from '../Home/slider/Custom.slider'
@@ -87,7 +89,7 @@ const Home = () => {
             our Ridiculous packages.You can get all the support you need to develop your business 
             through Brandspark.Contact us today without delay.
           </p>
-          <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'><button className='getstart'>Get start</button></Link>
+          <button className='getstart'>Get start</button>
         </div>
         </div>
 
