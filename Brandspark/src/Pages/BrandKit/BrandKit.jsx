@@ -8,11 +8,11 @@ const BrandKit = () => {
     return (
         <div>
 
-            <div className="headertext">
+            <div className="bkheadertext">
                 <h1>Make Your Brand Shine with BrandSpark's Brand Kit</h1>
                 <p>Access 300+ branded templates customized to your logo, colors, and fonts. Elevate your marketing materials and boost your business!</p>
-                <input className="company" type="text" placeholder="Enter your company name" />
-                <button className='getstart'>Let's make a brand kit!</button>
+                <input className="bkcompany" type="text" placeholder="Enter your company name" />
+                <button className='bkgetstart'>Let's make a brand kit!</button>
             </div>
 
             <div className="branding-container">
