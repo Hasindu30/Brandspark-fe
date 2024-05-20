@@ -15,8 +15,6 @@
     z-index: 100;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding-left: 30px;
-    
-    
 }
 
 .logo{
@@ -36,8 +34,6 @@
     font-size: 16px;
     cursor: pointer;
     font-family:"Outfit", sans-serif;
-    
-    
 }
 .navbar-mid{
     padding-left: 100px;
@@ -51,7 +47,9 @@
     cursor: pointer;
     font-family:"Outfit", sans-serif; 
 }
-
+.active-link{
+    color: #757573;
+}
 .navbar-right li.btnnav{
     background: #5340ff;
     border-radius: 4px;
@@ -64,6 +62,7 @@
     background: #2008f7;
     color: #fff;
 }
+
 .navbar-mid li:hover{
     color: #757373;
 }
@@ -76,7 +75,6 @@
     font-size: 16px;
     cursor: pointer;
     font-family:"Outfit", sans-serif; 
-
 }
 .response li:hover{
     color: #f3c2c2;

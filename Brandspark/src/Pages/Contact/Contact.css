@@ -36,7 +36,6 @@
     padding: 10px;
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    cursor:pointer;
     justify-content: center;
     align-items: center;
     display: grid;
@@ -44,6 +43,7 @@
     
   }
   .cardc h1{
+    font-size: 25px;
     text-align: center;
     font-family: "Outfit", sans-serif;
   }
@@ -62,4 +62,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
  }
+ 
+
+
+  
+
