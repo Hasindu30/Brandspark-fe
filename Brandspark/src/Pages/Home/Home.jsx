@@ -72,7 +72,7 @@ const Home = () => {
             Our mission is to empower individuals and businesses to create their own distinct identities. 
             Join us in crafting your brand story and standing out in the crowded market. Let's embark on this journey of creativity and innovation together
           </p>
-          <button className='getstart'>Get start</button>
+          <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/BrandKit'><button className='getstart'>Get start</button></Link>
           
         </div>
         <img src={brandhome} alt=""/>
