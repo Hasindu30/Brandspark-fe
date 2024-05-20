@@ -4,8 +4,6 @@ import contactcard1 from '../../assets/contactuscard1.jpg'
 import contactcard2 from '../../assets/contactcard2.jpg'
 import contactcard3 from '../../assets/contactcard3.jpg'
 
-
-
 const Contact = () => {
   return (
     <div>
@@ -40,8 +38,6 @@ const Contact = () => {
           <button className='getstart'>Join </button>
         </div>
       </div>
-      
-      
       
 
       
