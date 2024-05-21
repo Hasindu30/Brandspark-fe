@@ -1,0 +1,29 @@
+.chat-bubble {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    background-color:#5340ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+.chaticon{
+    width: 40px;
+    height: 40px;
+  }
+.chat-frame-container {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+  }
