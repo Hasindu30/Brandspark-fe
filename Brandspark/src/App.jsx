@@ -9,6 +9,8 @@ import CreateLogo from './Pages/CreateLogo/CreateLogo'
 import Expert from './Pages/Expert/Expert'
 import BrandKit from './Pages/BrandKit/BrandKit';
 import Contact from './Pages/Contact/Contact';
+import Chatbot from './Components/Chatbot/Chatbot';
+
 
 const App = () => {
   
@@ -26,7 +28,10 @@ const App = () => {
           <Route path='/Contact' element={<Contact/>}/>
         </Routes>
         <Footer/>
+        <Chatbot/>
+
       </BrowserRouter>
+
     </div>
   )
 }
