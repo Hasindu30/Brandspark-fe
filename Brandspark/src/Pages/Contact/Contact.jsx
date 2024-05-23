@@ -40,6 +40,7 @@ const Contact = () => {
           <button className='getstart'>Join </button>
         </div>
       </div>
+
       <div className="packagelist">
         <h1>Choose Brandkit best packages for you</h1>
         <p>Bring your brand to life with Ridiculous packages</p>
@@ -113,10 +114,14 @@ const Contact = () => {
           
           </div>
         </div>
+
       </div>
 
+        </div>
+
+
       
-    </div>
+   
   )
 }
 

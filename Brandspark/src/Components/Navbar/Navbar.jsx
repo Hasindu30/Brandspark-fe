@@ -15,7 +15,9 @@ const Navbar = () => {
          <Link to='/'><img src={logo} alt="" className='logo'/> </Link>
           
             <ul className='navbar-mid'>
+
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/'>Home</Link></li>
+                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/'>Brand name</Link></li>
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Logomaker'>Logo maker</Link></li>
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/BrandKit'>Brand Kit</Link></li>
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'>Contact</Link></li>
