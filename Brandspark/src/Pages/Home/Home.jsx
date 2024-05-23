@@ -199,7 +199,8 @@ const Home = () => {
                   <input className='company' type="text" placeholder='Enter Your Company Name'/>
                   <button className='getstart'>Get start</button>
             </div>
-    </div>
+            
+         </div>
     
   )
 }

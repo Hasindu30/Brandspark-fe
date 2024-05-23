@@ -6,6 +6,8 @@ import contactcard3 from '../../assets/contactcard3.jpg'
 import ptick from '../../assets/ptick.png'
 import star from '../../assets/starticon.png'
 
+
+
 const Contact = () => {
   return (
     <div>
@@ -40,6 +42,7 @@ const Contact = () => {
           <button className='getstart'>Join </button>
         </div>
       </div>
+
       <div className="packagelist">
         <h1>Choose Brandkit best packages for you</h1>
         <p>Bring your brand to life with Ridiculous packages</p>
@@ -113,7 +116,10 @@ const Contact = () => {
           
           </div>
         </div>
-      </div>
+        </div>
+      
+      
+      
 
       
     </div>
