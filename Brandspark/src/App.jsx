@@ -27,7 +27,6 @@ const App = () => {
           <Route path='/BrandKit' element={<BrandKit/>}/>
           <Route path='/Contact' element={<Contact/>}/>
         </Routes>
-        <Footer/>
         <Chatbot/>
 
       </BrowserRouter>
