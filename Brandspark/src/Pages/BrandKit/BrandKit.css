@@ -1,17 +1,18 @@
-.headertext{
+.bkheadertext{
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom:100px;
 }
-.headertext h1{
-    font-size: 50px;
+.bkheadertext h1{
+    font-size: 40px;
     font-family: "Outfit", sans-serif;
     font-weight: 700;
     padding-top: 100px;
     margin-left: 280px;
     margin-right: 280px;
+    margin-top: 50px;
     
 }
-.headertext p{
+.bkheadertext p{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -22,7 +23,7 @@
     margin-right: 280px;
 }
 
-.headertext input{
+.bkheadertext input{
     background-color: #f4f6f8;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -33,7 +34,7 @@
     margin-top: 30px;
     
 }
-.headertext input.company{
+.bkheadertext input.bkcompany{
     box-sizing: border-box;
     color: #676e8b;
     display: inline-block;
@@ -44,7 +45,7 @@
     width: 100%;
     
 }
-.headertext button.getstart{
+.bkheadertext button.bkgetstart{
     background: #5340ff;
     border-radius: 4px;
     border: none;
@@ -56,7 +57,7 @@
     display: inline-block;
 }
 
-.headertext button.getstart:hover{
+.bkheadertext button.bkgetstart:hover{
     background: #2008f7;
 }
 
@@ -64,53 +65,230 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
     font-family:"Outfit", sans-serif;
+    margin-top: 0;
   }
   
   .icon-container {
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 0;
   }
   
   .icon {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    margin-top: 0;
   }
   
   h2 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
   p {
-    font-size: 16px;
+    font-size: 18px;
     color: #676e8b;
   }
 
-  .container {
+  .mtcontainer {
     text-align: center;
     padding: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
     font-family: "Outfit", sans-serif;
   }
   
   h1 {
     font-size: 2.5em;
     font-weight: bold;
+    margin: 0px 100px;
   }
   
- .icon-container p{
+  p{
+    margin: 50px 100px;
+  }
+
+.icon-container p{
     font-size: 1em;
     color: #676e8b;
     margin-left: 50px;
     margin-right: 50px;
   }
-   
+
+.brand-start-container {
+  text-align: center;
+  background-color: #f0f2f5;
+  padding: 50px;
+  font-family: "Outfit", sans-serif;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+.brand-start-container h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.brand-start-container input{
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow: none;
+  margin-right: 8px;
+  max-width: 424px;
+  padding: 16px 24px;
+  margin-top: 30px;
+}
+
+.brand-start-container input.bkcompany{
+    box-sizing: border-box;
+    color: #676e8b;
+    display: inline-block;
+    font-family:"Outfit", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    outline: none;
+    width: 100%;
+}
+
+.brand-start-container button.bkgetstart{
+  background: #5340ff;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  padding: 18px 24px;
+  transition: 0.3s;
+  display: inline;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.brand-start-container button.bkgetstart:hover{
+  background: #2008f7;
+}
+
+.logomaker-brandkit{
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.logomaker-brandkit img{
+  max-width: 500px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.logomaker-brandkit p{
+  margin-top: 25px;
+  color: #676e8b;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  margin-left: 0;
+  margin-right: 0px;
+}
+
+.brandkitleft{
+  float: right;
+  margin-left: 50px;
+  margin-top: 80px;
+  margin-right: 50px;
+}
+
+.brandkitleft h2{
+  font-family: "Outfit", sans-serif;
+  color: #000000;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.brandkitleft h2 span {
+  color: #5340ff;
+  font-size: 30px;
+}  
+
+.cta-container {
+  background-color: #5340ff; 
+  color: white; 
+  text-align: left; 
+  padding: 50px; 
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  height: 250px; 
+  font-family: "Outfit", sans-serif;
+  margin-bottom: 100px;
+}
+
+.cta-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  margin-left: 50px;
+}
+
+.cta-left h1 {
+  font-size: 36px; 
+  margin-left: 20px;
+
+  }
+
+.cta-left p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.cta-input-container {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.cta-input-container input {
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow: none;
+  margin-right: 8px;
+  width: 300px;
+  padding: 20px 24px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.cta-input-container input::placeholder {
+  box-sizing: border-box;
+  color: #676e8b;
+  display: inline-block;
+  font-family:"Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  width: 100%;
+}
+
+.cta-input-container button {
+  background-color: #000000; 
+  color: white; 
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  padding: 18px 22px;
+  transition: transform ease 0.3s;
+  box-sizing: border-box;
+  margin-top: auto;
+  width: 30%;
+}
+
+.cta-input-container button:hover {
+  transform: scale(1.05); 
+}
 
 
-  

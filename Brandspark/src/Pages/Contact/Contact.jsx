@@ -6,8 +6,6 @@ import contactcard3 from '../../assets/contactcard3.jpg'
 import ptick from '../../assets/ptick.png'
 import star from '../../assets/starticon.png'
 
-
-
 const Contact = () => {
   return (
     <div>
@@ -116,13 +114,14 @@ const Contact = () => {
           
           </div>
         </div>
+
+      </div>
+
         </div>
-      
-      
-      
+
 
       
-    </div>
+   
   )
 }
 
