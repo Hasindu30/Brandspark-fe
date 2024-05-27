@@ -14,7 +14,8 @@
 
 }
 .contactheader p{
-    font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+    font-family: "Outfit", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #676e8b;
@@ -26,15 +27,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    margin: 80px;
-    margin-top: 100px;
-    margin-top: 60px;
+    margin: 90px;
+    margin-top: 30px;
   }
-.cardc {
+.cardcd {
     background-color: #f9f9f9;
     border-radius: 10px;
     padding: 10px;
-    margin: 20px;
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     justify-content: center;
     align-items: center;
@@ -42,52 +42,55 @@
     
     
   }
-  .cardc h1{
+  .cardcd h1{
     font-size: 25px;
     text-align: center;
     font-family: "Outfit", sans-serif;
   }
-  .cardc p{
+  .cardcd p{
     text-align: center;
-    font-family: "Roboto", sans-serif;
+    font-family: "Outfit", sans-serif;
     color: #676e8b;
+    margin-top: 10px;
   }
-  .cardcimg img {
+  .cardcdimg img {
     max-width: 100%;
     height: 180px;
     display: block;
     margin: 0 auto; 
   }
- .cardc button{
+ .cardcd button{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
  }
 
- .packagelist{
+ .packagelists{
   justify-content: center;
-  
+  width:1400px;
+  align-items: center;
+  margin-left: 10px;
 }
-.packagelist h1{
-font-size: 35px;
+.packagelists h1{
+  font-size: 35px;
   font-family: "Outfit", sans-serif;
   font-weight: 700;
   text-align: center;
   
 }
-.packagelist p{
+.packagelists p{
 font-size: 20px;
 text-align: center;
 }
-.packagecard{
-background-color: #f9f9f9;
+.packagecards{
+  background-color: #f9f9f9;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 50px;
+  
   justify-content: center;
   margin-top: 10px;
 }
@@ -160,7 +163,7 @@ padding: 13px 40px;
 align-items: center;
 justify-content: center;
 display: inline;
-margin-left: 80px;
+margin-left: 90px;
 padding: 13px 40px;
 margin-bottom: 10px;
 }
@@ -168,7 +171,7 @@ margin-bottom: 10px;
 align-items: center;
 justify-content: center;
 display: inline;
-margin-left: 80px;
+margin-left: 100px;
 padding: 13px 40px;
 margin-bottom: 10px;
 }
@@ -177,7 +180,4 @@ transform: translateY(-1px);
 box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 transition: 0.1s ease-in;
 }
-
- 
-
 

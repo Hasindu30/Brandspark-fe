@@ -6,8 +6,6 @@ import contactcard3 from '../../assets/contactcard3.jpg'
 import ptick from '../../assets/ptick.png'
 import star from '../../assets/starticon.png'
 
-
-
 const Contact = () => {
   return (
     <div>
@@ -17,24 +15,24 @@ const Contact = () => {
       </div>
 
       <div className="contactcards">
-      <div className="cardc">
-          <div className="cardcimg">
+      <div className="cardcd">
+          <div className="cardcdimg">
           <img src={contactcard1} alt="" />
           </div>
           <h1>Live Support</h1>
           <p>The support team of Brandspark is available! Send an email to Brandspark@mail.com or start a chat.</p>
           <button className='getstart'>Get Support</button>
         </div>
-        <div className="cardc">
-          <div className="cardcimg">
+        <div className="cardcd">
+          <div className="cardcdimg">
           <img src={contactcard2} alt="" />
           </div>
           <h1>Help Commiunity</h1>
           <p>Learn the simple tips and answers for creating logos and prmote your brand with Brandspark help comiunity.</p>
           <button className='getstart'>Get Support</button>
         </div>
-        <div className="cardc">
-          <div className="cardcimg">
+        <div className="cardcd">
+          <div className="cardcdimg">
           <img src={contactcard3} alt="" />
           </div>
           <h1>Work with us</h1>
@@ -43,11 +41,11 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="packagelist">
+      <div className="packagelists">
         <h1>Choose Brandkit best packages for you</h1>
         <p>Bring your brand to life with Ridiculous packages</p>
         
-        <div className="packagecard">
+        <div className="packagecards">
           <div className="cardp">
             <div className="cardpheader">
               <h2>Basic</h2>
@@ -116,13 +114,14 @@ const Contact = () => {
           
           </div>
         </div>
+
+      </div>
+
         </div>
-      
-      
-      
+
 
       
-    </div>
+   
   )
 }
 
