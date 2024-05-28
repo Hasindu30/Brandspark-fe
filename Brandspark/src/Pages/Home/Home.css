@@ -31,6 +31,12 @@
     margin-top: 30px;
     
 }
+.headertext form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .headertext input.company{
     box-sizing: border-box;
     color: #676e8b;
@@ -43,15 +49,16 @@
     
 }
 .headertext button.getstart{
+  margin-top: 30px;
     background: #5340ff;
     border-radius: 4px;
     border: none;
     color: #fff;
     padding: 18px 24px;
     transition: 0.3s;
-    display: inline;
-    box-sizing: border-box;
     display: inline-block;
+    box-sizing: border-box;
+    
 }
 .headertext button.getstart:hover{
     background: #2008f7;
