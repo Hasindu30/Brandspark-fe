@@ -29,8 +29,10 @@ const Home = () => {
       <div className="headertext">
         <h1>Design brand of your own Business</h1>
         <p>Utilize Brandspark AI-powered platform to promote your own brand </p>
-        <input className='company' type="text" placeholder='Enter Your Company Name'/>
-        <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Logomaker'><button className='getsta'>Get start</button></Link>
+        <form action="/Logomaker" method="get">
+          <input className='company' type="text" placeholder='Enter Your Company Name'/>
+          <button className='getstart'>Get started</button>
+        </form>
       </div>
       
       <div className="slider">
