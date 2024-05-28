@@ -110,7 +110,7 @@ const Expert = () => {
               <p>Digital Marketing Strategist & Analyst</p>
               <h4>Digital maven crafting data-driven strategies, driving 
                 engagement and conversions across channels.</h4>
-                <br />
+                
                 <button class="connect-button">Connect</button>
                 </div>
 
@@ -125,7 +125,7 @@ const Expert = () => {
               <p>Brand Strategy Consultant</p>
               <h4>Strategic thinker crafting innovative brand strategies, 
                 resonating with target audiences for success.</h4>
-                <br />
+                
                 <button class="connect-button">Connect</button>
                 </div>
 
@@ -141,7 +141,6 @@ const Expert = () => {
               <p>Business Intelligence Manager</p>
               <h4>Data expert translating insights into strategic decisions, 
                 unlocking opportunities for sustainable growth</h4>
-                <br />
                 <button class="connect-button">Connect</button>
                 </div>
 
@@ -157,7 +156,7 @@ const Expert = () => {
               <p>Business Development Analyst</p>
               <h4> Analytical thinker identifying growth opportunities, developing 
                 strategies to expand businesses into new markets.</h4>
-                <br />
+                
                 <button class="connect-button">Connect</button>
                 </div>
 
