@@ -9,6 +9,7 @@ import Expert from './Pages/Expert/Expert'
 import BrandKit from './Pages/BrandKit/BrandKit';
 import Contact from './Pages/Contact/Contact';
 import Chatbot from './Components/Chatbot/Chatbot';
+import Brandname from './Pages/Brandname/Brandname';
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
           <Route path='/Experts' element={<Expert/>}/>
           <Route path='/BrandKit' element={<BrandKit/>}/>
           <Route path='/Contact' element={<Contact/>}/>
+          <Route path='/Brandname' element={<Brandname/>}/>
         </Routes>
         <Chatbot/>
 

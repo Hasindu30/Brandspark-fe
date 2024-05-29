@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.brandnameheader{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.brandnameheader h1{
+    font-size: 50px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    padding-top: 150px;
+}
+
+.brandnameheader p{
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #676e8b;
+  margin-top: 28px;
+  font-size: 22px;
+}
+
+.brandnameheader input{
+    background-color: #f4f6f8;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    box-shadow: none;
+    margin-right: 8px;
+    max-width: 424px;
+    padding: 16px 24px;
+    margin-top: 20px;
+}
+
+.brandnameheader input.bname{
+    box-sizing: border-box;
+    color: #676e8b;
+    display: inline-block;
+    font-family:"Outfit", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    outline: none;
+    width: 100%;
+}
+
+.brandnameheader button.getstart{
+    background: #5340ff;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    padding: 18px 24px;
+    transition: 0.3s;
+    display: inline;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.brandnameheader button.getstart:hover{
+    background: #2008f7;
+}
