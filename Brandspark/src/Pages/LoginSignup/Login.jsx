@@ -36,4 +36,4 @@ const Login = () => {
   );
 };
 
-export default Login; // Added a semicolon here
+export default Login; 
