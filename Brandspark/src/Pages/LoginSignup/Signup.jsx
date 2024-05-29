@@ -1,5 +1,4 @@
 import React from 'react'
-
 import './Signup.css';
 
 const Signup = () => {
@@ -34,7 +33,7 @@ const Signup = () => {
 
         <button type="submit">Signup</button>
         <div className="Login"><br/>
-          <p className='Log'>Don't have an account? <a href="/Login">Register</a></p>
+          <p className='Log'>If have an account? <a href="/Login">Login</a></p>
         </div>
       </form>
 

@@ -1,14 +1,15 @@
 import React from 'react'
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar'
-import Signup from './Pages/Signup'
-import Login from './Pages/Login'
+import Signup from './Pages/LoginSignup/Signup'
+import Login from './Pages/LoginSignup/Login';
 import Home from './Pages/Home/Home'
-import Footer from './Components/Footer'
 import CreateLogo from './Pages/CreateLogo/CreateLogo'
 import Expert from './Pages/Expert/Expert'
 import BrandKit from './Pages/BrandKit/BrandKit';
 import Contact from './Pages/Contact/Contact';
+import Chatbot from './Components/Chatbot/Chatbot';
+
 
 const App = () => {
   
@@ -25,8 +26,10 @@ const App = () => {
           <Route path='/BrandKit' element={<BrandKit/>}/>
           <Route path='/Contact' element={<Contact/>}/>
         </Routes>
-        <Footer/>
+        <Chatbot/>
+
       </BrowserRouter>
+
     </div>
   )
 }
