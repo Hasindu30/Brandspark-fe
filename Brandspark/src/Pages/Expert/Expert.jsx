@@ -1,7 +1,6 @@
 import React from 'react'
-import Navbar from '../../Components/Navbar/Navbar'
-import Footer from '../../Components/Footer'
 import './Expert.css'
+import { Link } from 'react-router-dom'
 import expertbk from '../../assets/Expertpage/expertbk.png'
 import pp1 from '../../assets/Expertpage/pp1.png'
 import pp2 from '../../assets/Expertpage/pp2.png'
@@ -15,7 +14,7 @@ import pp8 from '../../assets/Expertpage/pp8.png'
 const Expert = () => {
   return (
     <div>
-        <Navbar/>
+        
         <div className='toptext'>
             <ul>
                 <li><h1><span className='text'>Expertize Avenue: Your Gateway to Business Brilliance</span><br /><br />
@@ -179,7 +178,7 @@ const Expert = () => {
                 guiding you towards strategic excellence and sustainable growth.</p>
                 
                 <h2>Contact with us</h2>
-                <button className='getstart'>Get start</button>
+                <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'><button className='getstart'>Get start</button></Link>
 
                 </li>
             </ul></div><br /><br /><br />

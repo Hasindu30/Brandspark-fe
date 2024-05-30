@@ -29,7 +29,7 @@ const Home = () => {
       <div className="headertext">
         <h1>Design brand of your own Business</h1>
         <p>Utilize Brandspark AI-powered platform to promote your own brand </p>
-        <form action="/Logomaker" method="get">
+        <form action="/Brandname" method="get">
           <input className='company' type="text" placeholder='Enter Your Company Name'/>
           <button className='getstart'>Get started</button>
         </form>
