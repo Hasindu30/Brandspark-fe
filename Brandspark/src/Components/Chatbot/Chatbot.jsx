@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Chatbot.css';
 import chaticon from'../../assets/chatbubble.png';
+import chatclose from'../../assets/chatclose.png';
 
 const Chatbot = () => {
     const [isChatOpen,setIsChatOpen]=useState(false);
@@ -16,6 +17,9 @@ const Chatbot = () => {
         </div>
         {isChatOpen &&(
             <div className="chat-frame-container">
+                <div className="close-chat" onClick={toggleChat}>
+                    <img src={chatclose} alt="" />
+                </div>
                 <iframe
                      src="https://www.chatbase.co/chatbot-iframe/gmtPDB5vDCaK8XXpXdfTY"
                     title="Chatbot"

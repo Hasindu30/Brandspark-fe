@@ -26,4 +26,22 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     overflow: hidden;
+    padding-top: 10px;
+    
+    
   }
+  .close-chat {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    color: black;
+    margin-right: 35px;
+    margin-top: 11px;
+    opacity: 80%;
+    
+    
+}
