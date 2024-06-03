@@ -6,6 +6,7 @@ import contactcard3 from '../../assets/contactcard3.jpg'
 import ptick from '../../assets/ptick.png'
 import star from '../../assets/starticon.png'
 import chaticon from '../../assets/chatbubble.png';
+import chatclose from'../../assets/chatclose.png';
 
 const Contact = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -124,6 +125,9 @@ const Contact = () => {
       </div>
       {isChatOpen && (
         <div className="chat-frame-container">
+          <div className="close-chat" onClick={toggleChat}>
+                    <img src={chatclose} alt="" />
+                </div>
           <iframe
             src="https://www.chatbase.co/chatbot-iframe/gmtPDB5vDCaK8XXpXdfTY"
             title="Chatbot"
