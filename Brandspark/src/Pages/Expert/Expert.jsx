@@ -10,11 +10,12 @@ import pp5 from '../../assets/Expertpage/pp5.png'
 import pp6 from '../../assets/Expertpage/pp6.png'
 import pp7 from '../../assets/Expertpage/pp7.png'
 import pp8 from '../../assets/Expertpage/pp8.png'
+import Navbar from '../../Components/Navbar/Navbar'
 
 const Expert = () => {
   return (
     <div>
-        
+        <Navbar/>
         <div className='toptext'>
             <ul>
                 <li><h1><span className='text'>Expertize Avenue: Your Gateway to Business Brilliance</span><br /><br />

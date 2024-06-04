@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.helpheader img{
+    width: 70px;
+    cursor: pointer;
+    padding-left: 40px;
+}
+.helpheader h1{
+    font-size: 50px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    padding-top: 100px;
+    text-align: center;
+}
+.helpheader p{
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #676e8b;
+  margin-top: 16px;
+  font-size: 22px;
+  text-align: center;
+ 
+}
+
+.message-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .message-form form input,
+  .message-form form textarea {
+    width: 95%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family:"Outfit", sans-serif; 
+  }
+  
+  .message-form form textarea {
+    height: 140px; 
+  }
+  
+  .message-form form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .message-form form button:hover {
+    background: #2008f7;
+  }
