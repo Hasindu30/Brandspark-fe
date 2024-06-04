@@ -7,6 +7,7 @@ import ptick from '../../assets/ptick.png'
 import star from '../../assets/starticon.png'
 import chaticon from '../../assets/chatbubble.png';
 import chatclose from'../../assets/chatclose.png';
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -36,7 +37,7 @@ const Contact = () => {
           </div>
           <h1>Help Commiunity</h1>
           <p>Learn the simple tips and answers for creating logos and prmote your brand with Brandspark help comiunity.</p>
-          <button className='getstart'>Get Support</button>
+          <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Help'><button className='getstart'>Get Support</button></Link>
         </div>
         <div className="cardcd">
           <div className="cardcdimg">

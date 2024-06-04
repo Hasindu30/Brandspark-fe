@@ -12,6 +12,7 @@ import Chatbot from './Components/Chatbot/Chatbot';
 import Brandname from './Pages/Brandname/Brandname';
 
 
+
 const App = () => {
   
   return (
@@ -27,6 +28,8 @@ const App = () => {
           <Route path='/BrandKit' element={<BrandKit/>}/>
           <Route path='/Contact' element={<Contact/>}/>
           <Route path='/Brandname' element={<Brandname/>}/>
+          
+          
         </Routes>
         <Chatbot/>
 
