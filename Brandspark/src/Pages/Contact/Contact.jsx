@@ -8,6 +8,7 @@ import star from '../../assets/starticon.png'
 import chaticon from '../../assets/chatbubble.png';
 import chatclose from'../../assets/chatclose.png';
 import { Link } from 'react-router-dom'
+import Navbar from '../../Components/Navbar/Navbar'
 
 const Contact = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -17,6 +18,7 @@ const Contact = () => {
   };
   return (
     <div>
+      <Navbar/>
       <div className="contactheader">
         <h1>Contact Brandspark</h1>
         <p>We are available to assist you in locating the ideal contact!</p>

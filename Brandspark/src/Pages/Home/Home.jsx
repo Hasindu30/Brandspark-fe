@@ -15,6 +15,7 @@ import cardimg4 from '../../assets/cardimg4.png'
 import cardimg5 from '../../assets/cardimg5.png'
 import cardimg6 from '../../assets/cardimg6.png'
 import { Link } from 'react-router-dom'
+import Navbar from '../../Components/Navbar/Navbar'
 
 
 
@@ -24,7 +25,7 @@ const Home = () => {
   
   return (
     <div>
-      
+      <Navbar/>
       
       <div className="headertext">
         <h1>Design brand of your own Business</h1>

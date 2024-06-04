@@ -1,9 +1,11 @@
 import React from 'react'
 import './Brandname.css'
+import Navbar from '../../Components/Navbar/Navbar'
 
 const Brandname = () => {
   return (
     <div>
+      <Navbar/>
       <div className="brandnameheader">
         <h1>Design Your Own Brandname</h1>
         <p> Brandspark AI-powered platform to create your own brandname </p>

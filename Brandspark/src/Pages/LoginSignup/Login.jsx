@@ -1,12 +1,13 @@
 import React from 'react';
 import './Signup.css';
+import Navbar from '../../Components/Navbar/Navbar';
 
 
 const Login = () => {
   return (
     
     <div>
-      
+      <Navbar/>
       <div className="wrapper">
         <form action="#">
           <h2>Login</h2>
