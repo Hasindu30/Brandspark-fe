@@ -1,9 +1,11 @@
 import React from 'react'
 import './Signup.css';
+import Emnavbar from '../../Components/Emnavbar/Emnavbar';
 
 const Expertsignup = () => {
   return (
     <div>
+      <Emnavbar/>
     <div>
 
 <div className="wrapper">

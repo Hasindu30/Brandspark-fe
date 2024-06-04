@@ -10,6 +10,7 @@ import Contact from './Pages/Contact/Contact';
 import Chatbot from './Components/Chatbot/Chatbot';
 import Brandname from './Pages/Brandname/Brandname';
 import Help from './Pages/Contact/Help/Help';
+import Expertsignup from './Pages/LoginSignup/Expertsignup';
 
 
 const App = () => {
@@ -27,6 +28,9 @@ const App = () => {
           <Route path='/Contact' element={<Contact/>}/>
           <Route path='/Brandname' element={<Brandname/>}/>
           <Route path='/Help' element={<Help/>}/>
+          <Route path='/expertsign' element={<Expertsignup/>}/>
+          
+
           
           
         </Routes>
