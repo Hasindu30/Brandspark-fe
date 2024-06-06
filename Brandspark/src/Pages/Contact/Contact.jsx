@@ -1,14 +1,24 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Contact.css' 
 import contactcard1 from '../../assets/contactuscard1.jpg'
 import contactcard2 from '../../assets/contactcard2.jpg'
 import contactcard3 from '../../assets/contactcard3.jpg'
 import ptick from '../../assets/ptick.png'
 import star from '../../assets/starticon.png'
+import chaticon from '../../assets/chatbubble.png';
+import chatclose from'../../assets/chatclose.png';
+import { Link } from 'react-router-dom'
+import Navbar from '../../Components/Navbar/Navbar'
 
 const Contact = () => {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+
+  const toggleChat = () => {
+    setIsChatOpen(!isChatOpen);
+  };
   return (
     <div>
+      <Navbar/>
       <div className="contactheader">
         <h1>Contact Brandspark</h1>
         <p>We are available to assist you in locating the ideal contact!</p>
@@ -21,7 +31,7 @@ const Contact = () => {
           </div>
           <h1>Live Support</h1>
           <p>The support team of Brandspark is available! Send an email to Brandspark@mail.com or start a chat.</p>
-          <button className='getstart'>Get Support</button>
+          <button className='getclick' onClick={toggleChat}>Get Support</button>
         </div>
         <div className="cardcd">
           <div className="cardcdimg">
@@ -29,7 +39,7 @@ const Contact = () => {
           </div>
           <h1>Help Commiunity</h1>
           <p>Learn the simple tips and answers for creating logos and prmote your brand with Brandspark help comiunity.</p>
-          <button className='getstart'>Get Support</button>
+          <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Help'><button className='getclick'>Get Support</button></Link>
         </div>
         <div className="cardcd">
           <div className="cardcdimg">
@@ -37,7 +47,7 @@ const Contact = () => {
           </div>
           <h1>Work with us</h1>
           <p>Become a part of a rapidly expanding organization that loves technology and design or your are a expert of business</p>
-          <button className='getstart'>Join </button>
+          <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/expertsign'><button className='getclick'>Join </button></Link>
         </div>
       </div>
 
@@ -116,7 +126,24 @@ const Contact = () => {
         </div>
 
       </div>
+      {isChatOpen && (
+        <div className="chat-frame-container">
+          <div className="close-chat" onClick={toggleChat}>
+                    <img src={chatclose} alt="" />
+                </div>
+          <iframe
+            src="https://www.chatbase.co/chatbot-iframe/gmtPDB5vDCaK8XXpXdfTY"
+            title="Chatbot"
+            width="100%"
+            style={{ height: '100%', minHeight: '500px' }}
+            frameBorder="0"
+          ></iframe>
+        </div>
+      )}
 
+      <div className="chat-bubble" onClick={toggleChat}>
+        <img src={chaticon} alt="" className='chaticon' />
+      </div>
         </div>
 
 

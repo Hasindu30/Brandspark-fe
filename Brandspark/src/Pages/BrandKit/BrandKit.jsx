@@ -9,12 +9,14 @@ import nike3 from '../../assets/BrandKit/nike3.jpg'
 import { Link } from 'react-router-dom'
 import FAQ from './FAQs/FAQ'
 import MT from './MarketingTools/MT'
+import Navbar from '../../Components/Navbar/Navbar'
+
 
 const BrandKit = () => {
 
     return (
         <div>
-
+            <Navbar/>
             <div className="bkheadertext">
                 <h1>Make your brand shine with BrandSpark's Brand Kit</h1>
                 <p>Access 300+ branded templates customized to your logo, colors, and fonts. Elevate your marketing materials and boost your business!</p>

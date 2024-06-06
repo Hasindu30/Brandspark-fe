@@ -1,10 +1,11 @@
 import React from 'react'
-
 import './Signup.css';
+import Navbar from '../../Components/Navbar/Navbar';
 
 const Signup = () => {
   return (
     <div>
+      <Navbar/>
         <div>
 
 <div className="wrapper">

@@ -47,9 +47,7 @@
     cursor: pointer;
     font-family:"Outfit", sans-serif; 
 }
-.active-link{
-    color: #757573;
-}
+
 .navbar-right li.btnnav{
     background: #5340ff;
     border-radius: 4px;

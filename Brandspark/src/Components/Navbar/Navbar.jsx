@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo2.png'
 import menures from '../../assets/menures.png'
-import { Link } from 'react-router-dom'
+import {Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
             <ul className='navbar-mid'>
 
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/'>Home</Link></li>
-                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/'>Brand name</Link></li>
+                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Brandname'>Brand name</Link></li>
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Logomaker'>Logo maker</Link></li>
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/BrandKit'>Brand Kit</Link></li>
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'>Contact</Link></li>
