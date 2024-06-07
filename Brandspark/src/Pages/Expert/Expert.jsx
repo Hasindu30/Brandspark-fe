@@ -1,7 +1,6 @@
 import React from 'react'
-import Navbar from '../../Components/Navbar/Navbar'
-import Footer from '../../Components/Footer'
 import './Expert.css'
+import { Link } from 'react-router-dom'
 import expertbk from '../../assets/Expertpage/expertbk.png'
 import pp1 from '../../assets/Expertpage/pp1.png'
 import pp2 from '../../assets/Expertpage/pp2.png'
@@ -11,6 +10,7 @@ import pp5 from '../../assets/Expertpage/pp5.png'
 import pp6 from '../../assets/Expertpage/pp6.png'
 import pp7 from '../../assets/Expertpage/pp7.png'
 import pp8 from '../../assets/Expertpage/pp8.png'
+import Navbar from '../../Components/Navbar/Navbar'
 
 const Expert = () => {
   return (
@@ -179,7 +179,7 @@ const Expert = () => {
                 guiding you towards strategic excellence and sustainable growth.</p>
                 
                 <h2>Contact with us</h2>
-                <button className='getstart'>Get start</button>
+                <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'><button className='getstart'>Get start</button></Link>
 
                 </li>
             </ul></div><br /><br /><br />

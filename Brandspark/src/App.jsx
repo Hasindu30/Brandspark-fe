@@ -1,6 +1,5 @@
 import React from 'react'
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import Navbar from './Components/Navbar/Navbar'
 import Signup from './Pages/LoginSignup/Signup'
 import Login from './Pages/LoginSignup/Login';
 import Home from './Pages/Home/Home'
@@ -10,6 +9,8 @@ import BrandKit from './Pages/BrandKit/BrandKit';
 import Contact from './Pages/Contact/Contact';
 import Chatbot from './Components/Chatbot/Chatbot';
 import Brandname from './Pages/Brandname/Brandname';
+import Help from './Pages/Contact/Help/Help';
+import Expertsignup from './Pages/LoginSignup/Expertsignup';
 
 
 const App = () => {
@@ -17,7 +18,6 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/Logomaker' element={<CreateLogo/>}/>
@@ -27,6 +27,12 @@ const App = () => {
           <Route path='/BrandKit' element={<BrandKit/>}/>
           <Route path='/Contact' element={<Contact/>}/>
           <Route path='/Brandname' element={<Brandname/>}/>
+          <Route path='/Help' element={<Help/>}/>
+          <Route path='/expertsign' element={<Expertsignup/>}/>
+          
+
+          
+          
         </Routes>
         <Chatbot/>
 

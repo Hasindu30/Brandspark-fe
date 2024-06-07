@@ -18,10 +18,11 @@ import gl12 from '../../assets/Logoimages/gl12.png'
 import logobk2 from '../../assets/Logoimages/logobk2.png'
 
 
+
 const CreateLogo = () => {
   return (
     <div>
-    
+    <Navbar/>
     <div className="logoheadertext">
         <h1>Brandspark Logo Maker</h1>
         <p>Brandspark Logo Maker helps you develop a unique
