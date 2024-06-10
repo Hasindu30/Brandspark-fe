@@ -13,7 +13,7 @@
     
 }
 .headertext p{
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #676e8b;
@@ -31,6 +31,12 @@
     margin-top: 30px;
     
 }
+.headertext form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .headertext input.company{
     box-sizing: border-box;
     color: #676e8b;
@@ -43,15 +49,16 @@
     
 }
 .headertext button.getstart{
+  margin-top: 30px;
     background: #5340ff;
     border-radius: 4px;
     border: none;
     color: #fff;
     padding: 18px 24px;
     transition: 0.3s;
-    display: inline;
-    box-sizing: border-box;
     display: inline-block;
+    box-sizing: border-box;
+    
 }
 .headertext button.getstart:hover{
     background: #2008f7;
@@ -72,32 +79,44 @@
     color: #222224;
     font-weight: 670;
 }
-.logomaker-home{
+.logomaker-home1{
     display: flex;
     margin: 100px 120px;
 }
-.homeleft{
+.homeleft1{
     float: right;
     margin-left: 80px;
     margin-top: 100px;
     margin-right: 100px;
 }
-.homeleft h1{
+.homeleft1 h1{
     font-family: "Outfit", sans-serif;
     color: #000000;
 }
-.logomaker-home img{
-    max-width: 450px;
+.logomaker-home1 img{
+    max-width: 430px;
+    margin-top: 80px;
 
 }
-.logomaker-home p{
+.logomaker-home1 p{
     margin-top: 25px;
     color: #676e8b;
     font-family: "Outfit", sans-serif;
     font-size: 20px;
 }
-.logomaker-home button{
-    margin-top: 20px;
+.logomaker-home1 button.getsta{
+  margin-left: 100px;
+  background: #5340ff;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  padding: 16px 22px;
+  transition: 0.3s;
+  display: inline;
+  box-sizing: border-box;
+  display: inline-block;
+  
+  
 }
 .homecard-header{
     text-align: center;

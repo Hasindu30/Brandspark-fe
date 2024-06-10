@@ -1,7 +1,6 @@
 import React from 'react'
-import Navbar from '../../Components/Navbar/Navbar'
-import Footer from '../../Components/Footer'
 import './Expert.css'
+import { Link } from 'react-router-dom'
 import expertbk from '../../assets/Expertpage/expertbk.png'
 import pp1 from '../../assets/Expertpage/pp1.png'
 import pp2 from '../../assets/Expertpage/pp2.png'
@@ -11,6 +10,7 @@ import pp5 from '../../assets/Expertpage/pp5.png'
 import pp6 from '../../assets/Expertpage/pp6.png'
 import pp7 from '../../assets/Expertpage/pp7.png'
 import pp8 from '../../assets/Expertpage/pp8.png'
+import Navbar from '../../Components/Navbar/Navbar'
 
 const Expert = () => {
   return (
@@ -110,7 +110,7 @@ const Expert = () => {
               <p>Digital Marketing Strategist & Analyst</p>
               <h4>Digital maven crafting data-driven strategies, driving 
                 engagement and conversions across channels.</h4>
-                <br />
+                
                 <button class="connect-button">Connect</button>
                 </div>
 
@@ -125,7 +125,7 @@ const Expert = () => {
               <p>Brand Strategy Consultant</p>
               <h4>Strategic thinker crafting innovative brand strategies, 
                 resonating with target audiences for success.</h4>
-                <br />
+                
                 <button class="connect-button">Connect</button>
                 </div>
 
@@ -141,7 +141,6 @@ const Expert = () => {
               <p>Business Intelligence Manager</p>
               <h4>Data expert translating insights into strategic decisions, 
                 unlocking opportunities for sustainable growth</h4>
-                <br />
                 <button class="connect-button">Connect</button>
                 </div>
 
@@ -157,7 +156,7 @@ const Expert = () => {
               <p>Business Development Analyst</p>
               <h4> Analytical thinker identifying growth opportunities, developing 
                 strategies to expand businesses into new markets.</h4>
-                <br />
+                
                 <button class="connect-button">Connect</button>
                 </div>
 
@@ -180,7 +179,7 @@ const Expert = () => {
                 guiding you towards strategic excellence and sustainable growth.</p>
                 
                 <h2>Contact with us</h2>
-                <button className='getstart'>Get start</button>
+                <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'><button className='getstart'>Get start</button></Link>
 
                 </li>
             </ul></div><br /><br /><br />

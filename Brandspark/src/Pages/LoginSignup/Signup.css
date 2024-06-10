@@ -10,20 +10,6 @@
     margin-left: 38%;
     margin-top: 100px;
     margin-bottom: 50px;
-    
-    
-    
-  }
-  
-  body {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 0 10px;
-    font-family: "Roboto", sans-serif;
- 
   }
 
   .wrapper {
@@ -39,7 +25,6 @@
   }
   
   form {
-    
     display: flex;
     flex-direction: column;
   }
@@ -116,9 +101,7 @@
   
   button {
     background: #5340ff;
-    
     color: #fff;
-    
     border: none;
     padding: 12px 20px;
     cursor: pointer;
@@ -128,7 +111,6 @@
     transition: 0.3s ease;
     opacity: 100%;
     font-family: "Roboto", sans-serif;
-
   }
   
   button:hover {
@@ -137,6 +119,5 @@
   
   .register {
     text-align: center;
-    margin-top: 30px;
     color: #000000;
   }

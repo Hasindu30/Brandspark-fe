@@ -1,10 +1,11 @@
 import React from 'react'
-
 import './Signup.css';
+import Navbar from '../../Components/Navbar/Navbar';
 
 const Signup = () => {
   return (
     <div>
+      <Navbar/>
         <div>
 
 <div className="wrapper">
@@ -34,7 +35,7 @@ const Signup = () => {
 
         <button type="submit">Signup</button>
         <div className="Login"><br/>
-          <p className='Log'>Don't have an account? <a href="/Login">Register</a></p>
+          <p className='Log'>If have an account? <a href="/Login">Login</a></p>
         </div>
       </form>
 

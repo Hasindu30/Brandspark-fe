@@ -1,13 +1,13 @@
 import React from 'react';
-import Navbar from '../Components/Navbar/Navbar'
 import './Signup.css';
+import Navbar from '../../Components/Navbar/Navbar';
 
 
 const Login = () => {
   return (
     
     <div>
-      
+      <Navbar/>
       <div className="wrapper">
         <form action="#">
           <h2>Login</h2>
@@ -37,4 +37,4 @@ const Login = () => {
   );
 };
 
-export default Login; // Added a semicolon here
+export default Login; 

@@ -1,5 +1,5 @@
 .fotteradj{
-  background: #626161;
+  background: #000000;
 
   width: 100%;
   height: auto;
@@ -62,7 +62,7 @@
 }
 
 .footer-distributed .footer-company-name {
-  color: #222;
+  color: #c5c5c5;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -168,6 +168,9 @@
   list-style-type: none;
   display: flex;
   gap: 30px;
+}
+.footer-distributed .footer-icons .icons{
+  margin-left: -39px;
 }
 
 .icons img {
