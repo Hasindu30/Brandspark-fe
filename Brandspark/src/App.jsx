@@ -35,6 +35,7 @@ const App = () => {
           <Route path='/Help' element={<Help/>}/>
           <Route path='/expertsign' element={<Expertsignup/>}/>
           <Route path='/onlinegpt' element={<Main/>}/>
+          <Route path='/brandname' element={<Brandname/>}/>
           
 
           

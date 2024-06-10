@@ -5,6 +5,7 @@ import CustomSlider from '../Home/slider/Custom.slider'
 import logomockup from '../../assets/logomockups.png'
 import logomakerhome from '../../assets/logomakerhome.png'
 import brandhome from '../../assets/brandhome.png'
+import brandname from '../../assets/brandname.png'
 import homecontact from '../../assets/homecontact.png'
 import homeexpert from '../../assets/homeexpert.png'
 import tick from '../../assets/tick.png'
@@ -51,6 +52,20 @@ const Home = () => {
 
       <div className="homeheader">
         <h1>Best place to start your own business and <br />promote your brand</h1>
+      </div>
+      <div className="logomaker-home1">
+      
+      <div className="homeleft1">
+      <h1>Create your own Business to Branded name </h1>
+        <p>An outstanding company name should make your organization stand out and act as a 
+          blank canvas for you to infuse your own meaning into. With the 
+          Brandspark Business Name Generator, you can quickly explore logo possibilities, 
+          verify availability, and generate brainstorming ideas.
+        </p>
+        <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Brandname'><button className='getsta'>Get start</button></Link>
+        
+      </div>
+      <img src={brandname} alt=""/>
       </div>
 
       <div className="logomaker-home1">
@@ -107,6 +122,8 @@ const Home = () => {
         <img src={homeexpert} alt=""/>
         </div>
         </div>
+        
+        
 
 
 
