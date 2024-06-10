@@ -1,0 +1,206 @@
+.basic{
+    flex: 1;
+    height: 90vh;
+    padding-bottom: 0;
+    position: relative;
+    margin-bottom: 0;
+}
+.basic .basic-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 45px;
+    color: #585858;
+    padding: 20px;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    
+}
+.basic .basic-nav p{
+    font-size: 25px;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin: 0;
+    margin-left: 10px;
+    
+}
+.basic .basic-nav img{
+    width: 60px;
+    border-radius: 50%;
+    
+    
+
+}
+.basic-container{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    
+}
+.basic .greet{
+    margin: 0 0 50px ;
+    font-size: 56px;
+    color: #c4c7c5;
+    font-weight: 500;
+    padding: 20px;
+    padding-top: 0;
+}
+.basic .greet p{
+    font-size: 56px;
+    color: #c4c7c5;
+    font-weight: 500;
+    margin: 0;
+    
+    
+}
+.basic .greet span {
+    background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}   
+.basic-bottom{
+    position: absolute;
+    max-width:900px;
+    padding: 0px 20px;
+    margin: auto;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+.search-boxb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #f0f4f9;
+    padding: 10px 20px;
+    border-radius: 50px;
+    
+    
+    
+}
+.search-boxb img{
+    width: 24px;
+    cursor: pointer;
+
+}
+.search-boxb input{
+    flex: 1;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 8px;
+    display: flex;
+    font-size: 18px;
+    font-family: "outfit";
+    
+    
+    
+}
+.search-boxb div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    
+    
+}
+.basic-bottom .bottom-info{
+    font-size: 13px;
+    margin: 15px auto 0;
+    text-align: center;
+    font-family: "outfit";
+    font-weight: 300;
+    color: black;
+   
+    
+    
+}
+.resultge{
+    padding: 0px 5% ;
+    max-height: 65vh;
+    overflow-y: scroll;
+    
+}
+.resultge p{
+    margin: 10px 60px;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-bottom: 10px;
+    font-weight: 300;
+    flex-wrap: wrap;
+}
+.resultge::-webkit-scrollbar{
+    display: none;
+}
+.resultge-title{
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    
+    
+}
+.result-data p{
+    margin: 10px 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    line-height: 1.8;
+
+    
+}
+.result-data img{
+    width: 40px;
+    
+    
+}
+.result-data{
+    display: flex;
+    align-items: start; 
+      
+    
+}
+.loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.loader hr{
+    border-radius: 4px;
+    background-color:#f6f7f8 ;
+    background: linear-gradient(to right,#9ed7ff,#ffffff,#9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    width: 100%;
+    outline: none;
+    animation: loader 3s infinite linear;
+    
+}
+@keyframes loader{
+    0%{
+        background-position: -800px;
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+}
