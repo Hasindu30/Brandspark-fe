@@ -81,7 +81,12 @@
 }
 .logomaker-home1{
     display: flex;
-    margin: 100px 120px;
+    margin: 100px 50px;
+    margin-left: 70px;
+}
+.logomaker-home2{
+  display: flex;
+  margin: 100px 30px;
 }
 .homeleft1{
     float: right;
@@ -98,13 +103,45 @@
     margin-top: 80px;
 
 }
+.logomaker-home2 img{
+  max-width: 600px;
+  margin-top: 80px;
+
+}
+
 .logomaker-home1 p{
     margin-top: 25px;
     color: #676e8b;
     font-family: "Outfit", sans-serif;
     font-size: 20px;
 }
+.logomaker-home2 p{
+  margin-top: 25px;
+  color: #676e8b;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+}
 .logomaker-home1 button.getsta{
+  margin-left: 100px;
+  background: #5340ff;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  padding: 16px 22px;
+  transition: 0.3s;
+  display: inline;
+  box-sizing: border-box;
+  display: inline-block;
+  
+  
+}
+.logomaker-home1 button.getsta:hover{
+  background: #2008f7;
+}
+.logomaker-home2 button.getsta:hover{
+  background: #2008f7;
+}
+.logomaker-home2 button.getsta{
   margin-left: 100px;
   background: #5340ff;
   border-radius: 4px;

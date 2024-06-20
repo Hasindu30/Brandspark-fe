@@ -11,6 +11,11 @@ import Chatbot from './Components/Chatbot/Chatbot';
 import Brandname from './Pages/Brandname/Brandname';
 import Help from './Pages/Contact/Help/Help';
 import Expertsignup from './Pages/LoginSignup/Expertsignup';
+import Sidebar from './Pages/onlinegpt/sidebar/Sidebar';
+import Main from './Pages/onlinegpt/Main';
+import ContextProvider from './Pages/onlinegpt/context/Context.jsx'
+
+
 
 
 const App = () => {
@@ -29,15 +34,18 @@ const App = () => {
           <Route path='/Brandname' element={<Brandname/>}/>
           <Route path='/Help' element={<Help/>}/>
           <Route path='/expertsign' element={<Expertsignup/>}/>
+          <Route path='/onlinegpt' element={<Main/>}/>
+          <Route path='/brandname' element={<Brandname/>}/>
           
 
           
           
         </Routes>
         <Chatbot/>
+        
 
       </BrowserRouter>
-
+      
     </div>
   )
 }
