@@ -169,7 +169,7 @@ const Expert = () => {
             optimize your marketing strategies, enhance your brand 
             identity, or streamline your operations, Brandspark online experts are here
           </p>
-          <button className='onlinehelp'>Get Help Now</button>
+          <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/onlinegpt'><button className='onlinehelp'>Get Help Now</button></Link>
         </div>
 
         <div className='bottomtext'>

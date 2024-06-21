@@ -5,8 +5,10 @@ import CustomSlider from '../Home/slider/Custom.slider'
 import logomockup from '../../assets/logomockups.png'
 import logomakerhome from '../../assets/logomakerhome.png'
 import brandhome from '../../assets/brandhome.png'
+import brandname from '../../assets/brandname.png'
 import homecontact from '../../assets/homecontact.png'
 import homeexpert from '../../assets/homeexpert.png'
+import homegpt from '../../assets/homegpt.png'
 import tick from '../../assets/tick.png'
 import cardimg1 from '../../assets/cardimg1.png'
 import cardimg2 from '../../assets/cardimg2.png'
@@ -52,6 +54,20 @@ const Home = () => {
       <div className="homeheader">
         <h1>Best place to start your own business and <br />promote your brand</h1>
       </div>
+      <div className="logomaker-home1">
+      
+      <div className="homeleft1">
+      <h1>Create your own Business to Branded name </h1>
+        <p>An outstanding company name should make your organization stand out and act as a 
+          blank canvas for you to infuse your own meaning into. With the 
+          Brandspark Business Name Generator, you can quickly explore logo possibilities, 
+          verify availability, and generate brainstorming ideas.
+        </p>
+        <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Brandname'><button className='getsta'>Get start</button></Link>
+        
+      </div>
+      <img src={brandname} alt=""/>
+      </div>
 
       <div className="logomaker-home1">
       <img src={logomakerhome} alt=""/>
@@ -89,7 +105,7 @@ const Home = () => {
             to promote your own brand and bring your brand to life contact us and visit 
             our Ridiculous packages.You can get all the support you need to develop your business 
             through Brandspark.Contact us today without delay.</p>
-          <button className='getsta'>Get start</button>
+            <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'><button className='getsta'>Get start</button></Link>
         </div>
         </div>
 
@@ -107,6 +123,20 @@ const Home = () => {
         <img src={homeexpert} alt=""/>
         </div>
         </div>
+
+        <div className="logomaker-home2">
+      <img className='gpt-image' src={homegpt} alt="gpt-image"/>
+        <div className="homeleft1">
+        <h1>All-In-One Brandspark AI Expert</h1>
+          <p>To get start with Brandspark AI-powered platform 
+            to promote your own brand and bring your brand to life contact our best and all in one chatbot and visit 
+            our Ridiculous packages.You can get all the support you need to develop your business 
+            through Brandspark online experter.Contact us today without delay.</p>
+            <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/onlinegpt'><button className='getsta'>Get start</button></Link>
+        </div>
+        </div>
+        
+        
 
 
 
