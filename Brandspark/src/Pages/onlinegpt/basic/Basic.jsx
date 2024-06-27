@@ -10,7 +10,12 @@ import { Link } from 'react-router-dom'
 
 const Basic = () => {
 
-    const {onSent,recentPrompt,showResult,loading,resultData,setInput,input} =useContext(Context)
+    const {onSent,recentPrompt,showResult,loading,resultData,setInput,input} =useContext(Context);
+    const handleKeyPress = (event) => {
+      if (event.key === 'Enter' && input) {
+        onSent();
+      }
+    };
     
   return (
     <div className='basic'>
@@ -51,7 +56,8 @@ const Basic = () => {
 
         <div className="basic-bottom">
         <div className="search-boxb">
-            <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" placeholder='Enter prompt here' />
+            <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" placeholder='Enter prompt here'
+             onKeyPress={handleKeyPress} />
             <div>
                 <img src={gallery_icon} alt="" />
                 <img src={mic_icon} alt="" />
