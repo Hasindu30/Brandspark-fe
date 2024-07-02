@@ -48,11 +48,26 @@ const Signup = () => {
               </div>
             </form>
             <div className="google-login">
-              <GoogleLogin
-                onSuccess={handleSuccess}
-                onFailure={handleFailure}
-              />
-            </div>
+            <GoogleLogin
+              onSuccess={handleSuccess}
+              onFailure={handleFailure}
+              render={renderProps => (
+                <button
+                  className="google-login-button"
+                  onClick={renderProps.onClick}
+                  disabled={renderProps.disabled}
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
+                    alt="Google"
+                    width="200"
+                    height="200"
+                  />
+                login with Google
+                </button>
+              )}
+            />
+          </div>
           </div>
         </div>
       </div>
