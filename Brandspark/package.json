@@ -11,9 +11,13 @@
   },
   "dependencies": {
     "@google/generative-ai": "^0.12.0",
+    "@react-oauth/google": "^0.12.1",
+    "axios": "^1.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.0"
+    "react-router-dom": "^6.24.0",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
