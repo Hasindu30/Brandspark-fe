@@ -24,12 +24,12 @@ const CreateLogo = () => {
     <div>
     <Navbar/>
     <div className="logoheadertext">
-        <h1>Brandspark Logo Maker</h1>
-        <p>Brandspark Logo Maker helps you develop a unique
+        <h1>Brandspark logo maker</h1>
+        <p>Brandspark logo maker helps you develop a unique
            logo you'll adore by fusing artificial intelligence with your preferred logo design. 
-           Five minutes and a few clicks are all that are required.</p>
+           Five minutes and a few clicks are all required.</p>
         <input className='logom' type="text" placeholder='Enter Your Company Name'/>
-        <button className='getstart'>Create Logo</button>
+        <button className='getstart'>Create logo</button>
       </div>
 
     <div className='logoidea'>
@@ -60,9 +60,9 @@ const CreateLogo = () => {
           <div className='bottomimage'>
             <ul>
             <li><img src={logobk2} alt="logobk2" /></li>
-            <li><h2><span className='brandsp'>Brandspark</span> where creativity meets identity. <br />Discover meticulously curated logo designs, 
-              from minimalist emblems to intricate illustrations, 
-              crafted to elevate your brand's presence and leave a lasting impression on your audience
+            <li><h2><span className='brandsp'>BrandSpark</span> where creativity meets identity. <br /> Discover carefully chosen logo designs, 
+              from minimalist emblems to detailed illustrations, 
+              crafted to elevate your brand's presence and leave a lasting impression on your audience.
               &nbsp;&nbsp;<br /><br /><button type="submit">Get started</button></h2></li>
             </ul>
 
