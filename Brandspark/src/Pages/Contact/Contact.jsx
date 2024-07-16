@@ -21,7 +21,7 @@ const Contact = () => {
       <Navbar/>
       <div className="contactheader">
         <h1>Contact Brandspark</h1>
-        <p>We are available to assist you in locating the ideal contact!</p>
+        <p>We are available to assist you in locating the ideal support!</p>
       </div>
 
       <div className="contactcards">
@@ -30,7 +30,7 @@ const Contact = () => {
           <img src={contactcard1} alt="" />
           </div>
           <h1>Live Support</h1>
-          <p>The support team of Brandspark is available! Send an email to Brandspark@mail.com or start a chat.</p>
+          <p>The support team of Brandspark is available! Send an email to brandspark@mail.com or start a chat.</p>
           <button className='getclick' onClick={toggleChat}>Get Support</button>
         </div>
         <div className="cardcd">
@@ -38,22 +38,22 @@ const Contact = () => {
           <img src={contactcard2} alt="" />
           </div>
           <h1>Help Commiunity</h1>
-          <p>Learn the simple tips and answers for creating logos and prmote your brand with Brandspark help comiunity.</p>
-          <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Help'><button className='getclick'>Get Support</button></Link>
+          <p>Learn the simple tips and answers for creating logos and prmote your brand with Brandspark help community.</p>
+          <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Help'><button className='getclick'>Get support</button></Link>
         </div>
         <div className="cardcd">
           <div className="cardcdimg">
           <img src={contactcard3} alt="" />
           </div>
-          <h1>Work with us</h1>
-          <p>Become a part of a rapidly expanding organization that loves technology and design or your are a expert of business</p>
+          <h1>Join with us</h1>
+          <p>Become a part of rapidly expanding organization using latest technology and design your business as an expert!</p>
           <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/expertsign'><button className='getclick'>Join </button></Link>
         </div>
       </div>
 
       <div className="packagelists">
-        <h1>Choose Brandkit best packages for you</h1>
-        <p>Bring your brand to life with Ridiculous packages</p>
+        <h1>Choose BrandSpark's brand kit packages that specially made for you</h1>
+        <p>Bring your brand to life with BrandSpark's packages</p>
         
         <div className="packagecards">
           <div className="cardp">
