@@ -1,4 +1,87 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
+import './Signup.css';
+import Navbar from '../../Components/Navbar/Navbar';
+
+const Signup = () => {
+  const [firstName, setFirstName] = useState('');
+  const [secondName, setSecondName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await axios.post('http://localhost:5000/api/auth/signup', {
+        firstName,
+        secondName,
+        email,
+        password
+      });
+      console.log(res.data);
+      // Store token in localStorage or state
+    } catch (error) {
+      console.error('Signup error:', error);
+    }
+  };
+
+  return (
+    <div>
+      <Navbar />
+      <div className="wrapper">
+        <form onSubmit={handleSubmit}>
+          <h2>Signup</h2>
+          <div className="input-field">
+            <input
+              type="text"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              required
+            />
+            <label htmlFor="firstName">Enter your first name</label>
+          </div>
+          <div className="input-field">
+            <input
+              type="text"
+              value={secondName}
+              onChange={(e) => setSecondName(e.target.value)}
+              required
+            />
+            <label htmlFor="secondName">Enter your second name</label>
+          </div>
+          <div className="input-field">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <label htmlFor="email">Enter your email</label>
+          </div>
+          <div className="input-field">
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+            <label htmlFor="password">Enter your password</label>
+          </div>
+          <button type="submit">Signup</button>
+          <div className="register">
+            <p>Already have an account? <a href="/Login">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default Signup;
+
+
+
+/* import React from 'react';
 import './Signup.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
@@ -76,3 +159,4 @@ const Signup = () => {
 }
 
 export default Signup;
+ */
