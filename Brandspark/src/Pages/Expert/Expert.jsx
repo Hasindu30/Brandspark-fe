@@ -15,7 +15,7 @@ import Navbar from '../../Components/Navbar/Navbar'
 const Expert = () => {
   return (
     <div>
-        <Navbar/>
+      <Navbar></Navbar>
         <div className='toptext'>
             <ul>
                 <li><h1><span className='text'>Expertize Avenue: Your Gateway to Business Brilliance</span><br /><br />
@@ -29,7 +29,7 @@ const Expert = () => {
         <br /><br /><br />
 
         <div className='cbody'><br />
-          <h1><span>Connect  Now With Our Experts</span></h1>
+          <h1><span>Connect Now With Our Experts</span></h1>
           <div className='anime'><br /><br />
             <div className='card'>
               <div className='ctext'>
