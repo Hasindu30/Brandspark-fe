@@ -30,7 +30,7 @@ const Home = () => {
       <Navbar/>
       
       <div className="headertext">
-        <h1>Design brand of your own Business</h1>
+        <h1>Design a brand for your own business</h1>
         <p>Utilize Brandspark AI-powered platform to promote your own brand </p>
         <form action="/Brandname" method="get">
           <input className='company' type="text" placeholder='Enter Your Company Name'/>
@@ -57,13 +57,13 @@ const Home = () => {
       <div className="logomaker-home1">
       
       <div className="homeleft1">
-      <h1>Create your own Business to Branded name </h1>
+      <h1>Create your own business to a branded name </h1>
         <p>An outstanding company name should make your organization stand out and act as a 
           blank canvas for you to infuse your own meaning into. With the 
           Brandspark Business Name Generator, you can quickly explore logo possibilities, 
           verify availability, and generate brainstorming ideas.
         </p>
-        <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Brandname'><button className='getsta'>Get start</button></Link>
+        <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Brandname'><button className='getsta'>Get started</button></Link>
         
       </div>
       <img src={brandname} alt=""/>
@@ -79,7 +79,7 @@ const Home = () => {
            that is more precise? 
           Not a problem! To narrow down the logos and find a design that truly works for your company, you may enter keywords.
           </p>
-          <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Logomaker'><button className='getsta'>Get start</button></Link>
+          <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Logomaker'><button className='getsta'>Get started</button></Link>
         </div>
         </div>
 
@@ -91,7 +91,7 @@ const Home = () => {
             Our mission is to empower individuals and businesses to create their own distinct identities. 
             Join us in crafting your brand story and standing out in the crowded market. Let's embark on this journey of creativity and innovation together
           </p>
-          <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/BrandKit'><button className='getsta'>Get start</button></Link>
+          <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/BrandKit'><button className='getsta'>Get started</button></Link>
           
         </div>
         <img src={brandhome} alt=""/>
@@ -100,12 +100,12 @@ const Home = () => {
         <div className="logomaker-home1">
       <img src={homecontact} alt=""/>
         <div className="homeleft1">
-        <h1>Contact to Brandspark for your business</h1>
+        <h1>Contact Brandspark for your business</h1>
           <p>To get start with Brandspark AI-powered platform 
             to promote your own brand and bring your brand to life contact us and visit 
             our Ridiculous packages.You can get all the support you need to develop your business 
             through Brandspark.Contact us today without delay.</p>
-            <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'><button className='getsta'>Get start</button></Link>
+            <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'><button className='getsta'>Get started</button></Link>
         </div>
         </div>
 
@@ -117,7 +117,7 @@ const Home = () => {
             streamline your operations, our experts are here to help. By leveraging years of industry experience
              and cutting-edge analytical tools, we provide actionable recommendations tailored to your specific needs.Ready to take your 
              business to the next level? Get in touch with our experts today to schedule a consultation.</p>
-          <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Experts'><button className='getsta'>Get start</button></Link>
+          <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Experts'><button className='getsta'>Get started</button></Link>
         </div>
         <div className="logomakerimg">
         <img src={homeexpert} alt=""/>
@@ -127,12 +127,11 @@ const Home = () => {
         <div className="logomaker-home2">
       <img className='gpt-image' src={homegpt} alt="gpt-image"/>
         <div className="homeleft1">
-        <h1>All-In-One Brandspark AI Expert</h1>
+        <h1>All-in-one Brandspark AI expert</h1>
           <p>To get start with Brandspark AI-powered platform 
-            to promote your own brand and bring your brand to life contact our best and all in one chatbot and visit 
-            our Ridiculous packages.You can get all the support you need to develop your business 
+            to promote your own brand and bring your brand to life contact our best and all in one chatbot and visit our Ridiculous packages.You can get all the support you need to develop your business 
             through Brandspark online experter.Contact us today without delay.</p>
-            <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/onlinegpt'><button className='getsta'>Get start</button></Link>
+            <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/onlinegpt'><button className='getsta'>Get started</button></Link>
         </div>
         </div>
         
@@ -141,7 +140,7 @@ const Home = () => {
 
 
           <div className="homecard-header">
-          <h1>Brandspark is best partner of your Business</h1>
+          <h1>Brandspark is best partner of your business</h1>
           <p>provides everything you need to start your business and Brandspark amazing right now. <br />
           You maintain creative control while artificial intelligence handles the labor-intensive graphic design tasks. </p>
           </div>
@@ -152,7 +151,7 @@ const Home = () => {
           <div className="cardimg">
             <img src={cardimg1} alt="" />
           </div>
-          <h1> Brandname</h1>
+          <h1> Brand name</h1>
           <ul>
             <li><img src={tick} alt="" />Create your own brand name to your future company</li>
             <li><img src={tick} alt="" />AI technology create professional and creative brandname</li>
@@ -228,9 +227,9 @@ const Home = () => {
       </div>
           
             <div className="bottomtext1">
-                  <p>Transform your imaginative idea into a company and brand</p>
+                  <p>Transform your imaginative idea into a company and brand.</p>
                   <input className='company' type="text" placeholder='Enter Your Company Name'/>
-                  <button className='getstart'>Get start</button>
+                  <button className='getstart'>Get started</button>
             </div>
             
          </div>

@@ -121,3 +121,28 @@
     text-align: center;
     color: #000000;
   }
+  .google-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+  }
+  
+  .google-login .google-login-button {
+    background-color: #4285F4;
+    color: white;
+    padding: 50px 80px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:25px;
+    transition: background-color 0.3s;
+  }
+  
+  .google-login .google-login-button:hover {
+    background-color: #357ae8;
+  }
+  
+  .google-login .google-login-button img {
+    margin-right: 10px;
+    vertical-align: middle;
+  }

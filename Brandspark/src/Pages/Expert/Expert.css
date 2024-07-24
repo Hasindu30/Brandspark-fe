@@ -25,17 +25,25 @@
     
 }
 .toptext ul h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #676e8b;
+    margin-top: 28px;
     font-size: 20px;
-    margin-top: 5%;
-    margin-right: 10%;
-    margin-left: 10%;
-    opacity: 80%;
-    font-family: "Outfit", sans-serif;
 }
 .toptext li span{
+    padding-top: 150px;
     font-size: 50px;
     font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    color: #000;
 }
+
+.text{
+    padding-bottom: 200px;
+}
+
 .anime{
     display: flex;
     margin-top: 4%;
@@ -168,7 +176,7 @@
     
 }
 .onlineexpert button.onlinehelp{
-    background-color:rgb(255, 107, 84);
+    background-color:rgb(54, 52, 52);
     border-radius: 5px;
     padding: 15px 18px;
     font-size: 28px;
@@ -177,7 +185,7 @@
     margin-top: 15px;
 }
 .onlineexpert button.onlinehelp:hover{
-    background-color:rgb(237, 50, 3);
+    background-color:rgb(10, 4, 2);
 }
 .bottomtext ul{
     list-style-type: none;
