@@ -132,7 +132,8 @@ body{
     font-size: 13pt;
     line-height: 1.5;
     color: rgb(51, 51, 51);
-    opacity: 90%;
+    font-weight: 300;
+    font-family: "Outfit", sans-serif;
 }
 .bottomimage li span {
     font-size: 50px;
