@@ -116,4 +116,58 @@
     color: rgb(0, 0, 0);
     background-color: #ffffff;
   }
+  .brandbox{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 40px;
+    padding-top: 60px;
+  }
+  .box1{
+    background: #fafafa;
+    padding: 20px 30px 30px;
+    border-radius: 10px;
   
+  }
+  .textb1 h1{
+    font-size: 34px;
+    margin-top: 25px;
+    
+    
+  }
+  .textg1 h1{
+    font-size: 34px;
+    margin-top: 2px;
+    margin-bottom: 29px;
+    padding-left: 50px;
+    color: #e6a706;
+  }
+  .textg2 h1{
+    font-size: 34px;
+    margin-top: 2px;
+    margin-bottom: 29px;
+    padding-left: 50px;
+    color: #ff0000;
+  }
+  .keybutton{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+  margin: 20px;
+    
+  }
+  .keybutton button {
+    flex: 1 1 20%; 
+    padding: 10px;
+    margin: 5px; 
+    
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: black;
+  }
+  .keybutton button:hover{
+    color: #676e8b;
+    background-color: aliceblue;
+  }
