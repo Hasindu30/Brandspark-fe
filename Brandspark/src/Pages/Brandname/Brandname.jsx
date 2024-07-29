@@ -288,7 +288,7 @@ const Brandname = () => {
           <h1>Generate brand names </h1>
           </div>
           <div className="textg2">
-            <h1>by your industry</h1>
+            <h1>with your industry</h1>
           </div>
           <div className="keybutton">
             <button>Education</button>
