@@ -245,6 +245,82 @@ const Brandname = () => {
           </div>
         )}
       </div>
+      <div className="brandbox">
+        <div className="box1">
+          <div className="textb1">
+          <h1>Generate brand names </h1>
+          </div>
+          <div className="textg1">
+            <h1>unique keywords</h1>
+          </div>
+          <div className="keybutton">
+            <button>smart</button>
+            <button>beautiful</button>
+            <button>creativity</button>
+            <button>blod</button>
+            <button>great</button>
+            <button>Glam</button>
+            <button>Fresh</button>
+            <button>Trendy</button>
+            <button>Innovate</button>
+            <button>Adventure</button>
+            <button>Bright</button>
+            <button>Quality</button>
+            <button>Creative</button>
+            <button>Reliable</button>
+            <button>Elegant</button>
+            <button>Simplicity</button>
+            <button>Fresh</button>
+            <button>Trust</button>
+            <button>Eco-friendly</button>
+            <button>Glam</button>
+            <button>Tasty</button>
+            <button>Modern</button>
+            <button>Legal</button>
+            <button>Agile</button>
+
+
+          </div>
+         
+        </div>
+        <div className="box1">
+          <div className="textb1">
+          <h1>Generate brand names </h1>
+          </div>
+          <div className="textg2">
+            <h1>with your industry</h1>
+          </div>
+          <div className="keybutton">
+            <button>Education</button>
+            <button>Technology</button>
+            <button>Fashion</button>
+            <button>Printing</button>
+            <button>Agency</button>
+            <button>Architecture</button>
+            <button>Animals</button>
+            <button>Software</button>
+            <button>Art</button>
+            <button>Adventure</button>
+            <button>Grocery</button>
+            <button>Pets</button>
+            <button>Fitness</button>
+            <button>Travel</button>
+            <button>Beauty</button>
+            <button>Home</button>
+            <button>Music</button>
+            <button>Finance</button>
+            <button>Sport</button>
+            <button>Food</button>
+            <button>Automotive</button>
+            <button>Modern</button>
+            <button>Airline</button>
+            <button>Alcohol</button>
+
+
+          </div>
+         
+        </div>
+      </div>
     </div>
   );
 };
