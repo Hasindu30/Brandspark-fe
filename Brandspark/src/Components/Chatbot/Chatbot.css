@@ -32,8 +32,8 @@
   }
   .close-chat {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 23px;
+    right: 15px;
     background: none;
     border: none;
     cursor: pointer;

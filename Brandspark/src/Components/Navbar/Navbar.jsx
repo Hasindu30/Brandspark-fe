@@ -17,8 +17,8 @@ const Navbar = () => {
             <ul className='navbar-mid'>
 
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/'>Home</Link></li>
-                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Brandname'>Brand name</Link></li>
-                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Logomaker'>Logo maker</Link></li>
+                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Brandname'>Brand Name</Link></li>
+                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Logomaker'>Logo Maker</Link></li>
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/BrandKit'>Brand Kit</Link></li>
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'>Contact</Link></li>
                 <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Experts'>Experts</Link></li>
@@ -30,13 +30,14 @@ const Navbar = () => {
             </ul>
             
       <ul className={mobileMenu ? 'response' : 'hide-mobile-menu'}>
-        <li>Home</li>
-        <li>Logo Maker</li>
-        <li>Brand Kit</li>
-        <li>Contact</li>
-        <li>Experts</li>
-        <li>Login</li>
-        <li>Signup</li>
+      <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/'>Home</Link></li>
+                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Brandname'>Brand name</Link></li>
+                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Logomaker'>Logo maker</Link></li>
+                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/BrandKit'>Brand Kit</Link></li>
+                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'>Contact</Link></li>
+                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Experts'>Experts</Link></li>
+                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Login'>Login</Link></li>
+                <li><Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Signup'>Signup</Link></li>
       </ul>
 
       <img src={menures} alt="" className='menures' onClick={toggleMenu}/>
