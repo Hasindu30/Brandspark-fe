@@ -4,6 +4,7 @@ import './Signup.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 import Swal from 'sweetalert2';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -70,7 +71,9 @@ const Login = () => {
               </label>
               <a href="#">Forgot password?</a>
             </div>
-            <button type="submit">Login</button>
+            <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/'>
+              <button type="submit" >Login</button>
+            </Link>
             <div className="register">
               <p>Don't have an account? <a href="/Signup">Register</a></p>
             </div>
