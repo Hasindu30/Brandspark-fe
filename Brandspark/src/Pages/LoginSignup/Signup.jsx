@@ -25,7 +25,7 @@ const Signup = () => {
       return;
     }
     try {
-      const response = await axios.post('http://localhost:5000/api/users/signup', formData);
+      const response = await axios.post('http://localhost:5000/api/auth/signup', formData);
       console.log('Signup Success:', response.data);
       Swal.fire({
         icon: 'success',
