@@ -3,6 +3,7 @@ import axios from 'axios';
 import './Signup.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
+import Swal from 'sweetalert2';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -10,7 +11,13 @@ const Login = () => {
 
   const handleSuccess = (credentialResponse) => {
     console.log('Login Success:', credentialResponse);
-    // Handle the response and send it to your backend for further processing
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Logged in successfully!',
+      showConfirmButton: false,
+      timer: 1500
+    });
   };
 
   const handleFailure = () => {

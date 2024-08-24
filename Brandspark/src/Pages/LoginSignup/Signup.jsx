@@ -3,6 +3,7 @@ import './Signup.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 import axios from 'axios';
+import Swal from 'sweetalert2';
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -26,6 +27,13 @@ const Signup = () => {
     try {
       const response = await axios.post('http://localhost:5000/api/users/signup', formData);
       console.log('Signup Success:', response.data);
+      Swal.fire({
+        icon: 'success',
+        title: 'Signup Successful!',
+        text: 'Your account has been created successfully.',
+        timer: 1500,
+        showConfirmButton: false,
+      });
     } catch (error) {
       console.error('Signup Error:', error.response.data);
     }
