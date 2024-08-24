@@ -14,6 +14,8 @@ import Expertsignup from './Pages/LoginSignup/Expertsignup';
 import Sidebar from './Pages/onlinegpt/sidebar/Sidebar';
 import Main from './Pages/onlinegpt/Main';
 import ContextProvider from './Pages/onlinegpt/context/Context.jsx'
+import Generator from './Pages/BrandKit/Generator.jsx';
+import SocialProfileGigs from './Pages/BrandKit/MarketingTools/SocialProfileGigs.jsx';
 
 
 
@@ -36,11 +38,10 @@ const App = () => {
           <Route path='/expertsign' element={<Expertsignup/>}/>
           <Route path='/onlinegpt' element={<Main/>}/>
           <Route path='/brandname' element={<Brandname/>}/>
+          <Route path="/generator" element={<Generator />} />
+          <Route path='SPGigs' element={<SocialProfileGigs />}/>
           
-
-          
-          
-        </Routes>
+       </Routes>
         <Chatbot/>
         
 

@@ -33,7 +33,6 @@ const Signup = () => {
 
   const handleSuccess = (credentialResponse) => {
     console.log('Login Success:', credentialResponse);
-    // Handle the response and send it to your backend for further processing
   };
 
   const handleFailure = () => {
@@ -100,8 +99,8 @@ const Signup = () => {
               </div>
               <br /><br />
               <button type="submit">Signup</button>
-              <div className="Login"><br />
-                <p className='Log'>If have an account? <a href="/Login">Login</a></p>
+              <div className="Login">
+                <p className='Log'>Do you have an account? <a href="/Login">Login</a></p>
               </div>
             </form>
             <div className="google-login">

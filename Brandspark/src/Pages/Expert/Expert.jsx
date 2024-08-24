@@ -163,7 +163,8 @@ const Expert = () => {
 
         </div>
         <div className="onlineexpert">
-          <h1>Get start analyze your business <br/>with online expert </h1>
+          <br />
+          <h1>Get start analyze your business <br/>with online expert </h1> <br /> <br />
           <p>Use Brandspark's AI-powered experts and get help to 
             optimize your marketing strategies, enhance your brand 
             identity, or streamline your operations, Brandspark online experts are here
@@ -173,12 +174,12 @@ const Expert = () => {
 
         <div className='bottomtext'>
             <ul>
-                <li><h1><span className='text'>We Help to Choose a Best Expert <br /> For You</span><br /><br /></h1>
+                <li><h1><span className='text'>We Help to Choose a Best Expert For You</span><br /><br /></h1>
                 <p>BrandSpark ensures you find the ideal expert to meet your brand's unique needs, 
                 guiding you towards strategic excellence and sustainable growth.</p>
                 
                 <h2>Contact with us</h2>
-                <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'><button className='getstart'>Get start</button></Link>
+                <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Contact'><button className='getstart'>Get started</button></Link>
 
                 </li>
             </ul></div><br /><br /><br />
