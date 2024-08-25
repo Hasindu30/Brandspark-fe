@@ -71,9 +71,9 @@ const Login = () => {
               </label>
               <a href="#">Forgot password?</a>
             </div>
-            <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/'>
+            
               <button type="submit" >Login</button>
-            </Link>
+            
             <div className="register">
               <p>Don't have an account? <a href="/Signup">Register</a></p>
             </div>
