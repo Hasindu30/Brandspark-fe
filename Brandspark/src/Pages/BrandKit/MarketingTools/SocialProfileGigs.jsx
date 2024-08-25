@@ -1,5 +1,7 @@
 import React from 'react';
 import './SocialProfileGigs.css';
+import gigImg1 from "../../../assets/BrandKit/SP/1.jpg";
+import { Link } from 'react-router-dom';
 
 const gigsData = [
   {
@@ -9,7 +11,7 @@ const gigsData = [
     reviews: 448,
     price: 300,
     seller: "Sarah S",
-    image: "path_to_image_1",
+    image: gigImg1,
     badge: "Top Rated",
     pro: false,
     videoConsultation: true
@@ -151,6 +153,7 @@ const gigsData = [
 const SocialProfileGigs = () => {
   return (
     <div className="social-profile-gigs-page">
+            <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/designer'><button >Get started</button></Link>
       <div className="results">93,000+ results</div>
       <div className="gigs-list">
         {gigsData.map(gig => (
@@ -168,13 +171,13 @@ const SocialProfileGigs = () => {
                 From ${gig.price}
               </div>
               {gig.videoConsultation && <div className="video-consultation">Offers video consultations</div>}
-              {gig.pro && <div className="pro-badge">Pro</div>}
+              {/* {gig.pro && <div className="pro-badge">Pro</div>} */}
             </div>
           </div>
         ))}
       </div>
     </div>
-  );
+      );
 }
 
 export default SocialProfileGigs;

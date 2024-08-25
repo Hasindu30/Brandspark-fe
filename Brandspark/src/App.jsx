@@ -16,6 +16,8 @@ import Main from './Pages/onlinegpt/Main';
 import ContextProvider from './Pages/onlinegpt/context/Context.jsx'
 import Generator from './Pages/BrandKit/Generator.jsx';
 import SocialProfileGigs from './Pages/BrandKit/MarketingTools/SocialProfileGigs.jsx';
+import Designer from './Pages/BrandKit/MarketingTools/Designer.jsx';
+import OrderForm from './Pages/BrandKit/MarketingTools/OrderForm.jsx';
 
 
 
@@ -39,8 +41,10 @@ const App = () => {
           <Route path='/onlinegpt' element={<Main/>}/>
           <Route path='/brandname' element={<Brandname/>}/>
           <Route path="/generator" element={<Generator />} />
-          <Route path='SPGigs' element={<SocialProfileGigs />}/>
-          
+          <Route path='/spgigs' element={<SocialProfileGigs />}/>
+          <Route path='/designer' element={<Designer />}/>
+          <Route path='/orderform' element={<OrderForm />}/>
+
        </Routes>
         <Chatbot/>
         
