@@ -8,6 +8,12 @@ body{
     text-align: center;
     margin-bottom: 0;
 }
+.headertext form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 .logoheadertext h1{
     font-size: 50px;
     font-family: "Outfit", sans-serif;
@@ -26,7 +32,7 @@ body{
   margin-left: 280px;
   margin-right: 280px;
 }
-.logoheadertext input{
+.logoheadertext input.logom{
     background-color: #f4f6f8;
     border: 1px solid transparent;
     border-radius: 8px;
