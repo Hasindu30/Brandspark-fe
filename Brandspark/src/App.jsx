@@ -14,6 +14,7 @@ import Expertsignup from './Pages/LoginSignup/Expertsignup';
 import Sidebar from './Pages/onlinegpt/sidebar/Sidebar';
 import Main from './Pages/onlinegpt/Main';
 import ContextProvider from './Pages/onlinegpt/context/Context.jsx'
+import Generatelogo from './Pages/CreateLogo/Generatelogo.jsx';
 
 
 
@@ -36,6 +37,8 @@ const App = () => {
           <Route path='/expertsign' element={<Expertsignup/>}/>
           <Route path='/onlinegpt' element={<Main/>}/>
           <Route path='/brandname' element={<Brandname/>}/>
+          <Route path='/genlogo' element={<Generatelogo/>}/>
+          
           
 
           
