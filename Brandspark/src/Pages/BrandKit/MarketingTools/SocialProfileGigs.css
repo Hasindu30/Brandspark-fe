@@ -9,16 +9,17 @@
 }
 
 .gigs-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /*Ensure 4 columns*/
+  gap: 20px; 
 }
 
 .gig-card {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
-  width: calc(25% - 20px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -34,6 +35,10 @@
 
 .gig-details {
   padding: 15px;
+  flex-grow: 1; /* Make details take up available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .gig-seller {

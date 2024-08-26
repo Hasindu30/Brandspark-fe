@@ -1,20 +1,27 @@
 import React from 'react';
 import './Designer.css';
-import gigPost from '../../../assets/BrandKit/SP/1.jpg';
+import gigPost from '../../../assets/BrandKit/Designer/8.png';
 import gigProf from '../../../assets/BrandKit/Sara.jpeg';
 import { Link } from 'react-router-dom';
+import work1 from '../../../assets/BrandKit/Designer/1.png';
+import work2 from '../../../assets/BrandKit/Designer/2.png';
+import work3 from '../../../assets/BrandKit/Designer/3.png';
+import work4 from '../../../assets/BrandKit/Designer/4.png';
+import work5 from '../../../assets/BrandKit/Designer/5.png';
+import work6 from '../../../assets/BrandKit/Designer/6.png';
 
 const Designer= () => {
   return (
+<div>
 <div className="container">
             <div className="header">
                 <div className="profile">
-                    <img src="profile-picture.jpg" alt="Designer Profile Picture" />
+                    <img src={gigProf} alt="Designer Profile Picture" />
                 </div>
-                <h1>Designer Gig Page</h1>
+                <h1>Sara Fernando</h1>
             </div>
 
-            <img src="gig-poster.jpg" alt="Gig Poster" className="gig-poster" />
+            <img src={gigPost} alt="Gig Poster" className="gig-poster" />
 
             <h2>Creative Design Services</h2>
             <p className="description">
@@ -28,12 +35,12 @@ const Designer= () => {
             </Link>
 
             <div className="gallery">
-                <img src="work1.jpg" alt="Work 1" />
-                <img src="work2.jpg" alt="Work 2" />
-                <img src="work3.jpg" alt="Work 3" />
-                <img src="work4.jpg" alt="Work 4" />
-                <img src="work5.jpg" alt="Work 5" />
-                <img src="work6.jpg" alt="Work 6" />
+                <img src={work1} alt="Work 1" />
+                <img src={work2} alt="Work 2" />
+                <img src={work3} alt="Work 3" />
+                <img src={work4} alt="Work 4" />
+                <img src={work5} alt="Work 5" />
+                <img src={work6} alt="Work 6" />
             </div>
 
             <div className="rating-widget">
@@ -65,6 +72,8 @@ const Designer= () => {
                 </div>
             </div>
         </div>
+</div>
+
   );
 };
 

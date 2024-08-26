@@ -1,6 +1,19 @@
 import React from 'react';
 import './SocialProfileGigs.css';
-import gigImg1 from "../../../assets/BrandKit/SP/1.jpg";
+
+import gigImg1 from "../../../assets/BrandKit/SP/9.png";
+import gigImg2 from "../../../assets/BrandKit/SP/10.png";
+import gigImg3 from "../../../assets/BrandKit/SP/11.png";
+import gigImg4 from "../../../assets/BrandKit/SP/12.png";
+import gigImg5 from "../../../assets/BrandKit/SP/13.png";
+import gigImg6 from "../../../assets/BrandKit/SP/14.png";
+import gigImg7 from "../../../assets/BrandKit/SP/15.png";
+import gigImg8 from "../../../assets/BrandKit/SP/16.png";
+import gigImg9 from "../../../assets/BrandKit/SP/17.png";
+import gigImg10 from "../../../assets/BrandKit/SP/18.png";
+import gigImg11 from "../../../assets/BrandKit/SP/19.png";
+import gigImg12 from "../../../assets/BrandKit/SP/20.png";
+
 import { Link } from 'react-router-dom';
 
 const gigsData = [
@@ -23,7 +36,7 @@ const gigsData = [
     reviews: "1k+",
     price: 450,
     seller: "Murray Swift",
-    image: "path_to_image_2",
+    image: gigImg2,
     badge: "",
     pro: true,
     videoConsultation: false
@@ -35,7 +48,7 @@ const gigsData = [
     reviews: 315,
     price: 320,
     seller: "Sara And Alba",
-    image: "path_to_image_3",
+    image: gigImg3,
     badge: "",
     pro: true,
     videoConsultation: false
@@ -47,7 +60,7 @@ const gigsData = [
     reviews: "1k+",
     price: 295,
     seller: "Elif A.",
-    image: "path_to_image_4",
+    image: gigImg4,
     badge: "",
     pro: true,
     videoConsultation: true
@@ -59,7 +72,7 @@ const gigsData = [
     reviews: 112,
     price: 200,
     seller: "Liam P.",
-    image: "path_to_image_5",
+    image: gigImg5,
     badge: "",
     pro: false,
     videoConsultation: false
@@ -71,7 +84,7 @@ const gigsData = [
     reviews: 528,
     price: 350,
     seller: "Olivia W.",
-    image: "path_to_image_6",
+    image: gigImg6,
     badge: "Top Rated",
     pro: true,
     videoConsultation: true
@@ -83,7 +96,7 @@ const gigsData = [
     reviews: 762,
     price: 180,
     seller: "Noah B.",
-    image: "path_to_image_7",
+    image: gigImg7,
     badge: "",
     pro: false,
     videoConsultation: false
@@ -95,7 +108,7 @@ const gigsData = [
     reviews: 345,
     price: 260,
     seller: "Emma K.",
-    image: "path_to_image_8",
+    image: gigImg8,
     badge: "",
     pro: true,
     videoConsultation: true
@@ -107,7 +120,7 @@ const gigsData = [
     reviews: 412,
     price: 150,
     seller: "James T.",
-    image: "path_to_image_9",
+    image: gigImg9,
     badge: "",
     pro: false,
     videoConsultation: false
@@ -119,7 +132,7 @@ const gigsData = [
     reviews: 589,
     price: 320,
     seller: "Isabella M.",
-    image: "path_to_image_10",
+    image: gigImg10,
     badge: "",
     pro: true,
     videoConsultation: false
@@ -131,7 +144,7 @@ const gigsData = [
     reviews: 276,
     price: 220,
     seller: "Mason H.",
-    image: "path_to_image_11",
+    image: gigImg11,
     badge: "Top Rated",
     pro: false,
     videoConsultation: true
@@ -143,7 +156,7 @@ const gigsData = [
     reviews: 132,
     price: 280,
     seller: "Sophia R.",
-    image: "path_to_image_12",
+    image: gigImg12,
     badge: "",
     pro: true,
     videoConsultation: false
@@ -152,8 +165,8 @@ const gigsData = [
 
 const SocialProfileGigs = () => {
   return (
+    
     <div className="social-profile-gigs-page">
-            <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/designer'><button >Get started</button></Link>
       <div className="results">93,000+ results</div>
       <div className="gigs-list">
         {gigsData.map(gig => (
