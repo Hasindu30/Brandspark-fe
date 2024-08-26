@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo2.png';
-import login from '../../assets/login.png';
+import loginImage from '../../assets/login.png'; // Default login image
 import menures from '../../assets/menures.png';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -13,7 +13,9 @@ const Navbar = () => {
 
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem('user'));
-    if (storedUser) {
+    const token = localStorage.getItem('token');
+    
+    if (storedUser && token) {
       setUser(storedUser);
     }
   }, []);
@@ -28,6 +30,7 @@ const Navbar = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('user');
+    localStorage.removeItem('token');
     setUser(null);
     setDropdownVisible(false);
     navigate('/login'); // Redirect to login page after logout
@@ -36,7 +39,7 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
       <Link to='/'>
-        <img src={logo} alt="" className='logo' />
+        <img src={logo} alt="Logo" className='logo' />
       </Link>
 
       <ul className='navbar-mid'>
@@ -52,7 +55,7 @@ const Navbar = () => {
         {user ? (
           <li className='user-dropdown'>
             <img
-              src={login} // Use user.image if available
+              src={loginImage} // Display login image only for authenticated users
               alt='User'
               className='login-img'
               onClick={toggleDropdown}
@@ -83,7 +86,7 @@ const Navbar = () => {
         <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Signup'>Signup</Link></li>
       </ul>
 
-      <img src={menures} alt="" className='menures' onClick={toggleMenu} />
+      <img src={menures} alt="Menu" className='menures' onClick={toggleMenu} />
     </nav>
   );
 };
