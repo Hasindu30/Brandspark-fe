@@ -3,6 +3,7 @@ import axios from 'axios';
 import './Signup.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
+import Swal from 'sweetalert2';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -10,10 +11,48 @@ const Login = () => {
 
   const handleSuccess = (credentialResponse) => {
     console.log('Login Success:', credentialResponse);
+
    };
 
+    // Example: Assuming you need to send the Google token to the backend
+    const tokenId = credentialResponse.credential;
+
+    axios.post('http://localhost:5000/api/auth/google', { tokenId })
+      .then(response => {
+        console.log('Google login successful:', response.data);
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Logged in successfully!',
+          showConfirmButton: false,
+          timer: 1500
+        });
+        // Store token in localStorage or state
+        localStorage.setItem('token', response.data.token);
+        // Redirect or update UI based on successful login
+      })
+      .catch(error => {
+        console.error('Google login error:', error);
+        Swal.fire({
+          position: 'top-end',
+          icon: 'error',
+          title: 'Google login failed!',
+          showConfirmButton: false,
+          timer: 1500
+        });
+      });
+  };
+
+
   const handleFailure = () => {
-    console.log('Login Failed');
+    console.log('Google Login Failed');
+    Swal.fire({
+      position: 'top-end',
+      icon: 'error',
+      title: 'Google login failed!',
+      showConfirmButton: false,
+      timer: 1500
+    });
   };
 
   const handleSubmit = async (e) => {
@@ -23,9 +62,29 @@ const Login = () => {
         email,
         password
       });
-      console.log(res.data);
+
+      console.log('Login successful:', res.data);
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Logged in successfully!',
+        showConfirmButton: false,
+        timer: 1500
+      });
+      // Store token in localStorage or state
+      localStorage.setItem('token', res.data.token);
+      // Redirect or update UI based on successful login
+
     } catch (error) {
-      console.error('Login error:', error);
+      console.error('Login error:', error.response ? error.response.data : error.message);
+      Swal.fire({
+        position: 'top-end',
+        icon: 'error',
+        title: 'Login failed!',
+        text: error.response ? error.response.data.msg : 'An unexpected error occurred.',
+        showConfirmButton: false,
+        timer: 1500,
+      });
     }
   };
 
@@ -78,8 +137,8 @@ const Login = () => {
                 >
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
                     alt="Google"
-                    width="200"
-                    height="200"
+                    width="20"
+                    height="20"
                   />
                   Login with Google
                 </button>
@@ -93,7 +152,4 @@ const Login = () => {
 };
 
 export default Login;
-
-
-
 
