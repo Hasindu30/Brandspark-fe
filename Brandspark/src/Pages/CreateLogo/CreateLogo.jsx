@@ -16,6 +16,7 @@ import gl10 from '../../assets/Logoimages/gl10.jpg'
 import gl11 from '../../assets/Logoimages/gl11.jpg'
 import gl12 from '../../assets/Logoimages/gl12.png'
 import logobk2 from '../../assets/Logoimages/logobk2.png'
+import { Link } from 'react-router-dom';
 
 
 
@@ -28,8 +29,13 @@ const CreateLogo = () => {
         <p>Brandspark logo maker helps you develop a unique
            logo you'll adore by fusing artificial intelligence with your preferred logo design. 
            Five minutes and a few clicks are all required.</p>
-        <input className='logom' type="text" placeholder='Enter Your Company Name'/>
-        <button className='getstart'>Create logo</button>
+
+          
+           <input className='logom' type="text" placeholder='Enter Your Company Name'/>
+          
+
+           <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/genlogo'> <button className='getstart'>Create logo</button></Link>
+       
       </div>
 
     <div className='logoidea'>

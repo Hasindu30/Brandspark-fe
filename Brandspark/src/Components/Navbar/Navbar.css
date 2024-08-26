@@ -93,6 +93,17 @@
     transition: 0.5s;
     
 }
+.login-img {
+    width: 40px;  /* Adjust the size as needed */
+    height: 40px;
+    border-radius: 50%;  /* Makes the image round */
+    margin-right: 10px;  /* Adds some space from the previous element */
+    cursor: pointer;  /* Adds a pointer cursor on hover */
+    
+   
+  }
+
+  
 
 /*-------- media query-------*/
 

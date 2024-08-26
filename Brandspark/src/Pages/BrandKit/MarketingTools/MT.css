@@ -30,6 +30,11 @@
     transition: transform 0.3s ease;
 }
 
+.brandkit-item a {
+    text-decoration: none;
+    color: inherit;
+  }  
+
 .brandkit-item:hover .brandkit-image {
     transform: scale(1.1);
 }
