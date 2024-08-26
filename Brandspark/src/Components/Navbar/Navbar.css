@@ -99,8 +99,11 @@
     border-radius: 50%;  /* Makes the image round */
     margin-right: 10px;  /* Adds some space from the previous element */
     cursor: pointer;  /* Adds a pointer cursor on hover */
+    
    
   }
+
+  
 
 /*-------- media query-------*/
 

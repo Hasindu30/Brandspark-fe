@@ -1,94 +1,111 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../../assets/logo2.png';
 import loginImage from '../../assets/login.png'; // Default login image
 import menures from '../../assets/menures.png';
-import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-  const [mobileMenu, setMobileMenu] = useState(false);
-  const [dropdownVisible, setDropdownVisible] = useState(false);
-  const [user, setUser] = useState(null);
-  const navigate = useNavigate();
+    const [mobileMenu, setMobileMenu] = useState(false);
+    const [dropdownVisible, setDropdownVisible] = useState(false);
+    const [user, setUser] = useState(null);
+    const navigate = useNavigate();
 
-  useEffect(() => {
-    const storedUser = JSON.parse(localStorage.getItem('user'));
-    const token = localStorage.getItem('token');
-    
-    if (storedUser && token) {
-      setUser(storedUser);
-    }
-  }, []);
+    useEffect(() => {
+        // Check if a token is present
+        const token = localStorage.getItem('token');
 
-  const toggleMenu = () => {
-    setMobileMenu(!mobileMenu);
-  };
+        if (token) {
+            // Fetch user info if token exists
+            fetch('/api/me', {
+                headers: {
+                    'x-auth-token': token
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    // Check if data is valid and set user
+                    if (data && data.firstName && data.lastName && data.email) {
+                        setUser(data);
+                    } else {
+                        throw new Error('Invalid user data');
+                    }
+                })
+                .catch(err => {
+                    console.error('Error fetching user data:', err);
+                    localStorage.removeItem('token'); // Clean up if there's an error
+                    setUser(null);
+                });
+        } else {
+            setUser(null);
+        }
+    }, []);
 
-  const toggleDropdown = () => {
-    setDropdownVisible(!dropdownVisible);
-  };
+    const toggleMenu = () => {
+        setMobileMenu(!mobileMenu);
+    };
 
-  const handleLogout = () => {
-    localStorage.removeItem('user');
-    localStorage.removeItem('token');
-    setUser(null);
-    setDropdownVisible(false);
-    navigate('/login'); // Redirect to login page after logout
-  };
+    const toggleDropdown = () => {
+        setDropdownVisible(!dropdownVisible);
+    };
 
-  return (
-    <nav className='navbar'>
-      <Link to='/'>
-        <img src={logo} alt="Logo" className='logo' />
-      </Link>
+    const handleLogout = () => {
+        localStorage.removeItem('token');
+        setUser(null);
+        setDropdownVisible(false);
+        navigate('/login');
+    };
 
-      <ul className='navbar-mid'>
-        <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/'>Home</Link></li>
-        <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Brandname'>Brand Name</Link></li>
-        <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Logomaker'>Logo Maker</Link></li>
-        <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/BrandKit'>Brand Kit</Link></li>
-        <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Contact'>Contact</Link></li>
-        <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Experts'>Experts</Link></li>
-      </ul>
+    return (
+        <nav className='navbar'>
+            <Link to='/'>
+                <img src={logo} alt="Logo" className='logo' />
+            </Link>
 
-      <ul className='navbar-right'>
-        {user ? (
-          <li className='user-dropdown'>
+            <ul className='navbar-mid'>
+                <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/'>Home</Link></li>
+                <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Brandname'>Brand Name</Link></li>
+                <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Logomaker'>Logo Maker</Link></li>
+                <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/BrandKit'>Brand Kit</Link></li>
+                <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Contact'>Contact</Link></li>
+                <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Experts'>Experts</Link></li>
+            </ul>
+
+            <ul className='navbar-right'>
+                
+                
+                    
+                        <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Login'>Login</Link></li>
+                        <li className='btnnav'><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Signup'>Signup</Link></li>
+                        <li className='user-dropdown'>
+                    
+                    
+                </li>
+                
+                
+            </ul>
             <img
-              src={loginImage} // Display login image only for authenticated users
-              alt='User'
-              className='login-img'
-              onClick={toggleDropdown}
-            />
-            {dropdownVisible && (
-              <div className='dropdown-menu'>
-                <p>{user.firstName} {user.lastName}</p>
-                <button onClick={handleLogout}>Logout</button>
-              </div>
-            )}
-          </li>
-        ) : (
-          <>
-            <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Login'>Login</Link></li>
-            <li className='btnnav'><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Signup'>Signup</Link></li>
-          </>
-        )}
-      </ul>
+                        src={loginImage} // Display login image all the time
+                        alt='User'
+                        className='login-img'
+                        
+                    />
+                    
 
-      <ul className={mobileMenu ? 'response' : 'hide-mobile-menu'}>
-        <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/'>Home</Link></li>
-        <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Brandname'>Brand name</Link></li>
-        <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Logomaker'>Logo maker</Link></li>
-        <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/BrandKit'>Brand Kit</Link></li>
-        <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Contact'>Contact</Link></li>
-        <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Experts'>Experts</Link></li>
-        <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Login'>Login</Link></li>
-        <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Signup'>Signup</Link></li>
-      </ul>
+            <ul className={mobileMenu ? 'response' : 'hide-mobile-menu'}>
+                <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/'>Home</Link></li>
+                <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Brandname'>Brand name</Link></li>
+                <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Logomaker'>Logo maker</Link></li>
+                <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/BrandKit'>Brand Kit</Link></li>
+                <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Contact'>Contact</Link></li>
+                <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Experts'>Experts</Link></li>
+                <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Login'>Login</Link></li>
+                <li><Link style={{ textDecoration: 'none', fontFamily: 'inherit', color: 'inherit' }} to='/Signup'>Signup</Link></li>
+            </ul>
 
-      <img src={menures} alt="Menu" className='menures' onClick={toggleMenu} />
-    </nav>
-  );
+            <img src={menures} alt="Menu" className='menures' onClick={toggleMenu} />
+        </nav>
+    );
 };
 
 export default Navbar;
