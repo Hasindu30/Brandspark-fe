@@ -20,9 +20,9 @@ const BrandKit = () => {
             <div className="bkheadertext">
                 <h1>Make your brand shine with BrandSpark's Brand Kit</h1>
                 <p>Access 300+ branded templates customized to your logo, colors, and fonts. Elevate your marketing materials and boost your business!</p>
-                <input className="bkcompany" type="text" placeholder="Enter your company name" />
-                <button className='bkgetstart'>Let's make a brand kit!</button>
-            </div>
+                    <input className='bkcompany' type="text" placeholder='Enter Your Company Name'/>
+                    <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Generator'><button className='bkgetstart'>Let's make a brand kit!</button></Link>
+                </div>
 
             <div className="branding-container">
                 <div className="icon-container">
