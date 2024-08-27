@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 
 const MT = () => {
     const items = [
-        { id: 1, title: 'Social Profiles', image: mockup1, link: '/generator' },
+        { id: 1, title: 'Social Profiles', image: mockup1, link: '/spgenerator' },
         { id: 2, title: 'Social Posts', image: mockup2 },
         { id: 3, title: 'Business Cards', image: mockup3 },
         { id: 4, title: 'Letter Heads', image: mockup4 },
