@@ -11,6 +11,9 @@ const Login = () => {
 
   const handleSuccess = (credentialResponse) => {
     console.log('Login Success:', credentialResponse);
+
+   };
+
     // Example: Assuming you need to send the Google token to the backend
     const tokenId = credentialResponse.credential;
 
@@ -40,6 +43,7 @@ const Login = () => {
       });
   };
 
+
   const handleFailure = () => {
     console.log('Google Login Failed');
     Swal.fire({
@@ -58,6 +62,7 @@ const Login = () => {
         email,
         password
       });
+
       console.log('Login successful:', res.data);
       Swal.fire({
         position: 'top-end',
@@ -69,6 +74,7 @@ const Login = () => {
       // Store token in localStorage or state
       localStorage.setItem('token', res.data.token);
       // Redirect or update UI based on successful login
+
     } catch (error) {
       console.error('Login error:', error.response ? error.response.data : error.message);
       Swal.fire({
@@ -146,3 +152,4 @@ const Login = () => {
 };
 
 export default Login;
+

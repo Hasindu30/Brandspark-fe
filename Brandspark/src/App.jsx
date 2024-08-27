@@ -14,7 +14,15 @@ import Expertsignup from './Pages/LoginSignup/Expertsignup';
 import Sidebar from './Pages/onlinegpt/sidebar/Sidebar';
 import Main from './Pages/onlinegpt/Main';
 import ContextProvider from './Pages/onlinegpt/context/Context.jsx'
+
+import Generator from './Pages/BrandKit/Generator.jsx';
+import SocialProfileGigs from './Pages/BrandKit/MarketingTools/SocialProfileGigs.jsx';
+import Designer from './Pages/BrandKit/MarketingTools/Designer.jsx';
+import OrderForm from './Pages/BrandKit/MarketingTools/OrderForm.jsx';
+import SPGenerator from './Pages/BrandKit/MarketingTools/Social Profile/SPGenerator.jsx';
+
 import Generatelogo from './Pages/CreateLogo/Generatelogo.jsx';
+
 
 
 
@@ -37,13 +45,19 @@ const App = () => {
           <Route path='/expertsign' element={<Expertsignup/>}/>
           <Route path='/onlinegpt' element={<Main/>}/>
           <Route path='/brandname' element={<Brandname/>}/>
+
+          <Route path="/generator" element={<Generator />} />
+          <Route path='/spgigs' element={<SocialProfileGigs />}/>
+          <Route path='/designer' element={<Designer />}/>
+          <Route path='/orderform' element={<OrderForm />}/>
+          <Route path='/spgenerator' element={<SPGenerator />}/>
+
           <Route path='/genlogo' element={<Generatelogo/>}/>
           
           
 
-          
-          
-        </Routes>
+
+       </Routes>
         <Chatbot/>
         
 
