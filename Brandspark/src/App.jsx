@@ -18,6 +18,7 @@ import Generator from './Pages/BrandKit/Generator.jsx';
 import SocialProfileGigs from './Pages/BrandKit/MarketingTools/SocialProfileGigs.jsx';
 import Designer from './Pages/BrandKit/MarketingTools/Designer.jsx';
 import OrderForm from './Pages/BrandKit/MarketingTools/OrderForm.jsx';
+import SPGenerator from './Pages/BrandKit/MarketingTools/Social Profile/SPGenerator.jsx';
 
 
 
@@ -44,6 +45,7 @@ const App = () => {
           <Route path='/spgigs' element={<SocialProfileGigs />}/>
           <Route path='/designer' element={<Designer />}/>
           <Route path='/orderform' element={<OrderForm />}/>
+          <Route path='/spgenerator' element={<SPGenerator />}/>
 
        </Routes>
         <Chatbot/>

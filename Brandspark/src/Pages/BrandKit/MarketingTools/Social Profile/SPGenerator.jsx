@@ -1,13 +1,13 @@
 import React from "react";
-import "./Generator.css";
+import "./SPGenerator.css";
 import { Link } from "react-router-dom";
 
-function Generator() {
+function SPGenerator() {
   return (
     <div className="social-profile">
       <header className="header">
         <center>
-        <h1>Build your brand kit</h1>
+        <h1>Build your social media kit</h1>
         </center>
         <div className="menu-icon">
           <span></span>
@@ -37,4 +37,4 @@ function Generator() {
   );
 }
 
-export default Generator;
+export default SPGenerator;
