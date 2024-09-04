@@ -9,11 +9,17 @@ import work3 from '../../../assets/BrandKit/Designer/3.png';
 import work4 from '../../../assets/BrandKit/Designer/4.png';
 import work5 from '../../../assets/BrandKit/Designer/5.png';
 import work6 from '../../../assets/BrandKit/Designer/6.png';
+import profile1 from '../../../assets/BrandKit/Designer/profile1.jpg'
+import profile2 from '../../../assets/BrandKit/Designer/profile2.jpg'
+import profile3 from '../../../assets/BrandKit/Designer/profile3.jpg'
+import Navbar from '../../../Components/Navbar/Navbar'
+
 
 const Designer= () => {
   return (
 <div>
 <div className="container">
+    <Navbar></Navbar>
             <div className="header">
                 <div className="profile">
                     <img src={gigProf} alt="Designer Profile Picture" />
@@ -45,7 +51,7 @@ const Designer= () => {
 
             <div className="rating-widget">
                 <div className="client-review">
-                    <img src="client1.jpg" alt="Client 1" />
+                    <img src={profile1} alt="Client 1" />
                     <div>
                         <span className="name">John Doe</span>
                         <span className="rating">★★★★★</span>
@@ -54,7 +60,7 @@ const Designer= () => {
                 </div>
 
                 <div className="client-review">
-                    <img src="client2.jpg" alt="Client 2" />
+                    <img src={profile2} alt="Client 2" />
                     <div>
                         <span className="name">Jane Smith</span>
                         <span className="rating">★★★★☆</span>
@@ -63,7 +69,7 @@ const Designer= () => {
                 </div>
 
                 <div className="client-review">
-                    <img src="client3.jpg" alt="Client 3" />
+                    <img src={profile3} alt="Client 3" />
                     <div>
                         <span className="name">Michael Brown</span>
                         <span className="rating">★★★★★</span>

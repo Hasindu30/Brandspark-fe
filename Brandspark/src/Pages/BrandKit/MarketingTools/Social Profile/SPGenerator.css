@@ -1,0 +1,92 @@
+.social-profile-gigs-page {
+    padding: 20px;
+    background-color: #f5f5f5;
+    padding-top: 100px;
+  }
+  
+  .results {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .gigs-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*Ensure 4 columns*/
+    gap: 20px; 
+  }
+  
+  .gig-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gig-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .gig-image {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .gig-details {
+    padding: 15px;
+    flex-grow: 1; /* Make details take up available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .gig-seller {
+    font-size: 14px;
+    color: #555;
+    display: block;
+  }
+  
+  .badge {
+    background-color: #ffc107;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  .gig-title {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .gig-rating {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .gig-price {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .video-consultation {
+    font-size: 12px;
+    color: #28a745;
+    margin-top: 10px;
+  }
+  
+  .pro-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #5a67d8;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
