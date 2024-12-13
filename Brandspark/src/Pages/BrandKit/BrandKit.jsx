@@ -11,7 +11,6 @@ import FAQ from './FAQs/FAQ'
 import MT from './MarketingTools/MT'
 import Navbar from '../../Components/Navbar/Navbar'
 
-
 const BrandKit = () => {
 
     return (

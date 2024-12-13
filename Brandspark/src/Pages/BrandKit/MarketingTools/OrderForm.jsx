@@ -17,12 +17,42 @@ const OrderForm = () => {
             // Remove the unchecked item from the array
             setNeed((prevNeeds) => prevNeeds.filter((item) => item !== value));
         }
-    };
+    };   
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission logic
-        console.log({ brandName, logo, category, suggestions, need });
+    const handleSubmit = async (e) => {
+        e.preventDefault(); // Prevent default form submission
+        
+        const formData = new FormData();
+        formData.append('brandName', brandName);
+        formData.append('logo', logo);
+        formData.append('category', category);
+        formData.append('suggestions', suggestions);
+        formData.append('need', JSON.stringify(need)); // Convert the `need` array to JSON string
+        
+        try {
+            const response = await fetch('http://localhost:5000/api/brandidentity/submit', {
+                method: 'POST',
+                body: formData,
+            });
+    
+            if (response.ok) {
+                const contentType = response.headers.get('content-type');
+                if (contentType && contentType.includes('application/json')) {
+                    const data = await response.json();
+                    console.log('Success:', data);
+                    window.alert('Form submitted successfully!');
+                } else {
+                    console.log('Response is not JSON:', await response.text());
+                    window.alert('Form submitted successfully, but response is not JSON!');
+                }
+            } else {
+                console.error('Server Error:', response.status, response.statusText);
+                window.alert('Submission failed. Try again later.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            window.alert('Submission failed. Try again later.');
+        }
     };
 
     return (
@@ -45,7 +75,8 @@ const OrderForm = () => {
                     <input
                         type="file"
                         id="logo"
-                        onChange={(e) => setLogo(e.target.files[0])}
+                        accept="image/*" // Restrict to image files
+                        onChange={(e) => setLogo(e.target.files[0])} 
                         required
                     />
                 </div>

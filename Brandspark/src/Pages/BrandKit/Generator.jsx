@@ -26,7 +26,7 @@ function Generator() {
         </div>
         <div className="option">
           <h3>I don't have a logo</h3>
-          <p>Don’t have a logo? Use Looka’s AI-powered design platform to get a logo and build a brand you love</p>
+          <p>Don’t have a logo? Use BrandSparks’s AI-powered design platform to get a logo and build a brand you love</p>
           <Link style={{textDecoration:'none',fontFamily:'inherit',color:'#5340ff',}} to='/Logomaker'>
           <button className="make-logo">Make Logo</button>
           </Link>
