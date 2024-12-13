@@ -10,11 +10,12 @@ const Login = () => {
   const [password, setPassword] = useState('');
 
   const handleSuccess = (credentialResponse) => {
+    
     console.log('Login Success:', credentialResponse);
 
     // Example: Assuming you need to send the Google token to the backend
     const tokenId = credentialResponse.credential;
-
+    
     axios.post('http://localhost:5000/api/auth/google', { tokenId })
       .then(response => {
         console.log('Google login successful:', response.data);
@@ -40,8 +41,6 @@ const Login = () => {
         });
       });
   };
-
-
   const handleFailure = () => {
     console.log('Google Login Failed');
     Swal.fire({
@@ -100,7 +99,7 @@ const Login = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
-              <label htmlFor="email">Enter your email</label>
+              <label htmlFor="email">Email</label>
             </div>
             <div className="input-field">
               <input
@@ -109,7 +108,7 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
-              <label htmlFor="password">Enter your password</label>
+              <label htmlFor="password">Password</label>
             </div>
             <div className="forget">
               <label htmlFor="remember">
@@ -124,24 +123,24 @@ const Login = () => {
             </div>
           </form>
           <div className="google-login">
-            <GoogleLogin
-              onSuccess={handleSuccess}
-              onFailure={handleFailure}
-              render={(renderProps) => (
-                <button
-                  className="google-login-button"
-                  onClick={renderProps.onClick}
-                  disabled={renderProps.disabled}
-                >
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
-                    alt="Google"
-                    width="20"
-                    height="20"
-                  />
-                  Login with Google
-                </button>
-              )}
-            />
+          <GoogleLogin
+            onSuccess={handleSuccess}
+            onFailure={handleFailure}
+            render={(renderProps) => (
+              <button
+                className="google-login-button"
+                onClick={renderProps.onClick}
+                disabled={renderProps.disabled}
+              >
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
+                  alt="Google"
+                  width="20"
+                  height="20"
+                />
+                Login with Google
+              </button>
+            )}
+          />
           </div>
         </div>
       </div>
@@ -150,4 +149,3 @@ const Login = () => {
 };
 
 export default Login;
-
