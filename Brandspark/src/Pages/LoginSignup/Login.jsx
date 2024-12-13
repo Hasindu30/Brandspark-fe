@@ -10,9 +10,12 @@ const Login = () => {
   const [password, setPassword] = useState('');
 
   const handleSuccess = (credentialResponse) => {
+    
     console.log('Login Success:', credentialResponse);
+
     // Example: Assuming you need to send the Google token to the backend
     const tokenId = credentialResponse.credential;
+    
     axios.post('http://localhost:5000/api/auth/google', { tokenId })
       .then(response => {
         console.log('Google login successful:', response.data);
