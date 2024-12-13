@@ -12,8 +12,6 @@ const Login = () => {
   const handleSuccess = (credentialResponse) => {
     console.log('Login Success:', credentialResponse);
 
-   };
-
     // Example: Assuming you need to send the Google token to the backend
     const tokenId = credentialResponse.credential;
 
