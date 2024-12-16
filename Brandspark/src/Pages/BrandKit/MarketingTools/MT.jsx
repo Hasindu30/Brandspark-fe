@@ -14,14 +14,14 @@ import { Link } from 'react-router-dom'
 const MT = () => {
     const items = [
         { id: 1, title: 'Social Profiles', image: mockup1, link: '/spgenerator' },
-        { id: 2, title: 'Social Posts', image: mockup2 },
-        { id: 3, title: 'Business Cards', image: mockup3 },
-        { id: 4, title: 'Letter Heads', image: mockup4 },
-        { id: 5, title: 'Posters', image: mockup5 },
-        { id: 6, title: 'Presentations', image: mockup6 },
-        { id: 7, title: 'Invitations', image: mockup7 },
-        { id: 8, title: 'Web Sites', image: mockup8 },
-        { id: 9, title: 'Brochures', image: mockup9 }
+        { id: 2, title: 'Social Posts', image: mockup2, link: '/spgenerator' },
+        { id: 3, title: 'Business Cards', image: mockup3, link: '/spgenerator' },
+        { id: 4, title: 'Letter Heads', image: mockup4, link: '/spgenerator' },
+        { id: 5, title: 'Posters', image: mockup5, link: '/spgenerator' },
+        { id: 6, title: 'Presentations', image: mockup6, link: '/spgenerator' },
+        { id: 7, title: 'Invitations', image: mockup7, link: '/spgenerator' },
+        { id: 8, title: 'Web Sites', image: mockup8, link: '/spgenerator' },
+        { id: 9, title: 'Brochures', image: mockup9, link: '/spgenerator' }
     ];
 
     return (
