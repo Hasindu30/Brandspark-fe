@@ -11,7 +11,6 @@ import FAQ from './FAQs/FAQ'
 import MT from './MarketingTools/MT'
 import Navbar from '../../Components/Navbar/Navbar'
 
-
 const BrandKit = () => {
 
     return (
@@ -56,7 +55,9 @@ const BrandKit = () => {
             <div className="brand-start-container">
                 <h1>Build your brand — reach new heights.</h1>
                 <input className="bkcompany" type="text" placeholder="Enter your company name" />
+                <Link style={{textDecoration:'none',fontFamily:'inherit',color:'inherit',}} to='/Generator'>
                 <button className="bkgetstart">Get started</button>
+                </Link>
             </div>
 
             <div className="bkheadertext">
@@ -68,7 +69,7 @@ const BrandKit = () => {
                 <div className="brandkitleft">
                     <h2><span>01.</span> Build your brand’s look</h2>
                     <p>Start telling your brand’s story with a logo that grabs attention. With BrandSpark, you can upload your logo or make a new one that shows off what you’re all about. Then, pick colors, fonts, and pictures that show your style and make your brand stand out.</p>
-                    <p>Ready to begin? Visit our <Link style={{textDecoration:'none',fontFamily:'inherit',color:'#5340ff',}} to='/Logo Maker'>logo maker</Link> to create your unique logo today.</p>
+                    <p>Ready to begin? Visit our <Link style={{textDecoration:'none',fontFamily:'inherit',color:'#5340ff',}} to='/Logomaker'>logo maker</Link> to create your unique logo today.</p>
                 </div>
             </div>
 
