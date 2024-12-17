@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; // useState: Track which FAQ item is active
 import './FAQ.css';
 
-const FAQ = () => {
+const FAQ = () => { // Defines a functional component named FAQ
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const toggleFAQ = (index) => {
+  const toggleFAQ = (index) => { // toggleFAQ: Handles the logic for expanding or collapsing an FAQ item.
     setActiveIndex(activeIndex === index ? null : index);
   };
 
@@ -31,13 +31,13 @@ const FAQ = () => {
     }
   ];
 
-  return (
+  return ( // Specifies the JSX that the component will render.
     <div className="faq-container">
       <h1 className="faq-title">BrandSpark Brand Kit FAQs</h1>
-      {faqs.map((faq, index) => (
+      {faqs.map((faq, index) => ( // .map(array_sobject, index): an array method that loops through each item in the array
         <div key={index} className="faq-item">
           <div
-            className={`faq-question ${activeIndex === index ? 'active' : ''}`}
+            className={`faq-question ${activeIndex === index ? 'active' : ''}`} // Dynamic Class Assignment (Static: faq-question/ Dynamic: active)
             onClick={() => toggleFAQ(index)}
           >
             {faq.question}
@@ -52,4 +52,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default FAQ; //  Makes the FAQ component available for use in other files.

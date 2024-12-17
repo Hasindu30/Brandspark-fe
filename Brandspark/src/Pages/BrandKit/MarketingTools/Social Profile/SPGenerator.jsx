@@ -1,6 +1,6 @@
 import React from "react";
 import "./SPGenerator.css";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // Imports the Link component from the react-router-dom library, used for navigation between routes.
 
 function SPGenerator() {
   return (
@@ -9,8 +9,8 @@ function SPGenerator() {
         <center>
         <h1>Build your social media kit</h1>
         </center>
-        <div className="menu-icon">
-          <span></span>
+        <div className="menu-icon"> 
+          <span></span> 
           <span></span>
           <span></span>
         </div>
@@ -26,7 +26,7 @@ function SPGenerator() {
         </div>
         <div className="option">
           <h3>I don't have a logo</h3>
-          <p>Don’t have a logo? Use Looka’s AI-powered design platform to get a logo and build a brand you love</p>
+          <p>Don’t have a logo? Use BrandSpark’s AI-powered design platform to get a logo and build a brand you love</p>
           <Link style={{textDecoration:'none',fontFamily:'inherit',color:'#5340ff',}} to='/Logomaker'>
           <button className="make-logo">Make Logo</button>
           </Link>
