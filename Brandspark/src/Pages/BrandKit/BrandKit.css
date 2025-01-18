@@ -1,6 +1,6 @@
 .bkheadertext{
     text-align: center;
-    margin-bottom:100px;
+    margin-bottom: 50px;
 }
 
 .bkheadertext h1{
@@ -10,7 +10,7 @@
     padding-top: 100px;
     margin-left: 280px;
     margin-right: 280px;
-    margin-top: 50px;
+    margin-top: 20px;
     
 }
 .bkheadertext p{
@@ -35,6 +35,14 @@
     margin-top: 30px;
     
 }
+
+.bkheadertext form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .bkheadertext input.bkcompany{
     box-sizing: border-box;
     color: #676e8b;
@@ -47,6 +55,7 @@
     
 }
 .bkheadertext button.bkgetstart{
+    margin-top: 30px;
     background: #5340ff;
     border-radius: 4px;
     border: none;
